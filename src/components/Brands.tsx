@@ -7,10 +7,10 @@ export default function Brands() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center mb-10">
           <span className="font-mono text-[10px] font-bold text-gray-500 tracking-widest uppercase block mb-2">
-            CERTIFIED COMPONENT COVERAGE
+            CAKUPAN KOMPONEN BERSERTIFIKAT
           </span>
           <h3 className="font-display font-bold text-lg sm:text-xl text-white tracking-tight">
-            Supported Manufacturers & Board Brands
+            Produsen & Merek Board yang Didukung
           </h3>
         </div>
 

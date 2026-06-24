@@ -31,18 +31,16 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-bold tracking-wider text-lg text-white">
-                  AERO<span className="text-brand-blue">GPU</span>
+                  AKAHITO<span className="text-brand-blue"> STORE</span>
                 </span>
                 <span className="font-mono text-[8px] text-brand-blue tracking-widest uppercase">
-                  REPAIR & HARDWARE
+                  REPARASI & PERANGKAT KERAS
                 </span>
               </div>
             </a>
 
             <p className="text-gray-400 text-sm font-sans leading-relaxed max-w-sm">
-              We operate an enthusiast-level micro-soldering and BGA rework
-              laboratory. Sourcing rare components, upgrading memory chips, and
-              restoring faulty graphics boards since 2018.
+              Kami mengoperasikan laboratorium penyolderan mikro dan pengerjaan ulang BGA tingkat antusias. Menyediakan suku cadang langka, meningkatkan chip memori, dan merestorasi kartu grafis yang rusak sejak 2018.
             </p>
 
             {/* Socials */}
@@ -77,38 +75,38 @@ export default function Footer() {
           {/* Col 2: Services Quick links - 3/12 width */}
           <div className="lg:col-span-3 flex flex-col items-start gap-4">
             <h4 className="font-display font-bold text-sm text-white tracking-wide">
-              REPAIR SOLUTIONS
+              SOLUSI PERBAIKAN
             </h4>
             <div className="flex flex-col gap-2.5 text-sm font-sans">
               <a
                 href="#services"
                 className="text-gray-400 hover:text-brand-blue transition-colors text-left"
               >
-                Micro-Soldering & VRM
+                Mikro-Solder & VRM
               </a>
               <a
                 href="#services"
                 className="text-gray-400 hover:text-brand-blue transition-colors text-left"
               >
-                GDDR6 VRAM Swapping
+                Penggantian VRAM GDDR6
               </a>
               <a
                 href="#services"
                 className="text-gray-400 hover:text-brand-blue transition-colors text-left"
               >
-                BGA Reballing & Reflow
+                Reballing BGA & Reflow
               </a>
               <a
                 href="#services"
                 className="text-gray-400 hover:text-brand-blue transition-colors text-left"
               >
-                Custom Soft/Hardline Loop
+                Loop Kustom Soft/Hardline
               </a>
               <a
                 href="#services"
                 className="text-gray-400 hover:text-brand-blue transition-colors text-left"
               >
-                Ultrasonic Bath Wash
+                Pembersihan Bak Ultrasonik
               </a>
             </div>
           </div>
@@ -116,38 +114,38 @@ export default function Footer() {
           {/* Col 3: Navigation shortcuts - 2/12 width */}
           <div className="lg:col-span-2 flex flex-col items-start gap-4">
             <h4 className="font-display font-bold text-sm text-white tracking-wide">
-              NAVIGATION
+              NAVIGASI
             </h4>
             <div className="flex flex-col gap-2.5 text-sm font-sans">
               <a
                 href="#services"
                 className="text-gray-400 hover:text-brand-blue transition-colors"
               >
-                Our Services
+                Layanan Kami
               </a>
               <a
                 href="#before-after"
                 className="text-gray-400 hover:text-brand-blue transition-colors"
               >
-                Showcase
+                Portofolio
               </a>
               <a
                 href="#products"
                 className="text-gray-400 hover:text-brand-blue transition-colors"
               >
-                Shop Hardware
+                Toko Hardware
               </a>
               <a
                 href="#why-us"
                 className="text-gray-400 hover:text-brand-blue transition-colors"
               >
-                Why Choose Us
+                Keunggulan Kami
               </a>
               <a
                 href="#gallery"
                 className="text-gray-400 hover:text-brand-blue transition-colors"
               >
-                Laboratory Gallery
+                Galeri Laboratorium
               </a>
             </div>
           </div>
@@ -159,12 +157,11 @@ export default function Footer() {
             </div>
 
             <h4 className="font-display font-bold text-sm text-white leading-tight">
-              Official 365-Day Guarantee
+              Garansi Resmi 365 Hari
             </h4>
 
             <p className="text-gray-400 text-xs font-sans leading-relaxed">
-              Every component-level VRM rebuild, trace repair, or liquid metal
-              overhaul we perform is backed by our full 1-year guarantee.
+              Setiap pembangunan kembali VRM tingkat komponen, perbaikan jalur, atau perawatan liquid metal yang kami lakukan didukung oleh garansi penuh 1 tahun.
             </p>
           </div>
         </div>
@@ -172,22 +169,21 @@ export default function Footer() {
         {/* Lower copyright bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs text-gray-500 font-mono">
-            © 2026 AeroGPU Labs. All rights reserved. Developed under BGA solder
-            compliance standards.
+            © 2026 Akahito Store Semarang. Hak Cipta Dilindungi Undang-Undang. Dikembangkan di bawah standar kepatuhan solder BGA.
           </span>
 
           <div className="flex items-center gap-6 text-xs text-gray-500 font-sans">
             <a href="#" className="hover:text-brand-blue transition-colors">
-              Privacy Policy
+              Kebijakan Privasi
             </a>
             <a href="#" className="hover:text-brand-blue transition-colors">
-              Terms of Work
+              Ketentuan Layanan
             </a>
             <button
               onClick={handleScrollTop}
               className="p-2 rounded-lg bg-white/5 hover:bg-brand-blue hover:text-neutral-950 transition-all flex items-center justify-center gap-1.5 font-mono text-[10px] uppercase font-bold cursor-pointer"
             >
-              TOP <ArrowUp className="w-3.5 h-3.5" />
+              ATAS <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>

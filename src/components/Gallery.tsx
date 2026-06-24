@@ -9,11 +9,11 @@ export default function Gallery() {
   const [lightboxImage, setLightboxImage] = useState<GalleryItem | null>(null);
 
   const categories = [
-    { value: 'all', label: 'All Photos' },
-    { value: 'builds', label: 'Enthusiast Builds' },
-    { value: 'gpus', label: 'GPU Redesigns' },
-    { value: 'workshop', label: 'Workshop Lab' },
-    { value: 'microscope', label: 'Microscope Views' }
+    { value: 'all', label: 'Semua Foto' },
+    { value: 'builds', label: 'PC Rakitan' },
+    { value: 'gpus', label: 'Desain Ulang GPU' },
+    { value: 'workshop', label: 'Ruang Kerja Lab' },
+    { value: 'microscope', label: 'Tampilan Mikroskop' }
   ];
 
   const filteredItems =
@@ -33,19 +33,17 @@ export default function Gallery() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-            VISUAL PORTFOLIO
+            PORTOFOLIO VISUAL
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            Inside the AeroGPU <br />
+            Di Dalam Lab Bersih <br />
             <span className="text-brand-blue font-extrabold">
-              Cleanroom Workshop
+              Akahito Store
             </span>
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            A photo journal of our favorite projects. High-precision solder
-            bridges, frozen liquid loops, macro PCB configurations, and custom
-            battle-station deliveries.
+            Dokumentasi foto dari proyek favorit kami. Sambungan solder presisi tinggi, pendingin cairan kustom, konfigurasi PCB makro, dan PC rakitan kustom kelas atas.
           </p>
         </div>
 
@@ -149,7 +147,7 @@ export default function Gallery() {
               <div className="md:w-2/5 p-6 sm:p-8 bg-dark-card flex flex-col justify-between text-left border-t md:border-t-0 md:border-l border-white/5">
                 <div>
                   <span className="font-mono text-2xs font-bold text-brand-blue tracking-widest uppercase bg-brand-blue/10 border border-brand-blue/20 px-2.5 py-1 rounded">
-                    PHASE LOG REPORT // {lightboxImage.category}
+                    LAPORAN LOG FASE // {lightboxImage.category}
                   </span>
 
                   <h3 className="font-display font-bold text-xl sm:text-2xl text-white mt-4 mb-3">
@@ -166,7 +164,7 @@ export default function Gallery() {
                       <Camera className="w-4 h-4 text-brand-blue" />
                       <div className="flex flex-col">
                         <span className="text-[9px] text-gray-500 font-mono">
-                          LAB CAMERA
+                          KAMERA LAB
                         </span>
                         <span className="text-xs text-gray-300 font-mono">
                           Micro-Nikkor 105mm f/2.8 Macro
@@ -178,7 +176,7 @@ export default function Gallery() {
                       <Eye className="w-4 h-4 text-brand-blue" />
                       <div className="flex flex-col">
                         <span className="text-[9px] text-gray-500 font-mono">
-                          MAGNIFICATION
+                          PERBESARAN
                         </span>
                         <span className="text-xs text-gray-300 font-mono">
                           20x Optical Dental Scope
@@ -190,7 +188,7 @@ export default function Gallery() {
 
                 <div className="border-t border-white/5 pt-4 mt-6">
                   <span className="text-[10px] text-gray-500 font-mono block">
-                    AeroGPU Lab Logs • Registered 2026-06-23
+                    Log Lab Akahito Store • Terdaftar 2026-06-23
                   </span>
                 </div>
               </div>

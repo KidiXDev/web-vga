@@ -14,72 +14,72 @@ interface ProcessStep {
 const STEPS: ProcessStep[] = [
   {
     number: '01',
-    title: 'Device Inspection',
+    title: 'Inspeksi Perangkat',
     icon: <Search className="w-5 h-5 text-brand-blue" />,
     image:
       'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=400',
-    desc: 'Unpacking your GPU or PC in an anti-static clean zone. We log cosmetic conditions, verify physical damage or prior repair attempts under high-magnification lenses.',
+    desc: 'Membongkar GPU atau PC Anda di area bersih antistatis. Kami mencatat kondisi kosmetik, memverifikasi kerusakan fisik, atau upaya perbaikan sebelumnya di bawah lensa pembesaran tinggi.',
     checks: [
-      'High-res macro photography log',
-      'Corrosion/Liquid damage audit',
-      'PCIe rail impedance testing',
-      'ESD registration check-in'
+      'Log foto makro resolusi tinggi',
+      'Audit korosi/kerusakan cairan',
+      'Pengujian impedansi jalur PCIe',
+      'Registrasi masuk aman ESD'
     ]
   },
   {
     number: '02',
-    title: 'Precision Diagnosis',
+    title: 'Diagnosis Presisi',
     icon: <ShieldAlert className="w-5 h-5 text-brand-blue" />,
     image:
       'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=400',
-    desc: 'Using advanced multi-meters, oscilloscopes, and thermal imaging cameras, we power-sequence your card to track down micro-shortages and identify failing power phases.',
+    desc: 'Menggunakan multimeter canggih, osiloskop, dan kamera pencitraan termal untuk melacak korsleting mikro dan mengidentifikasi fase daya yang rusak.',
     checks: [
-      'Thermal imaging heat map logs',
-      'Power sequencing validation',
-      'Clock signal checking',
-      'Component-level fault isolation'
+      'Log peta panas pencitraan termal',
+      'Validasi urutan daya',
+      'Pemeriksaan sinyal clock',
+      'Isolasi kesalahan tingkat komponen'
     ]
   },
   {
     number: '03',
-    title: 'Solder & Core Repair',
+    title: 'Penyolderan & Reparasi Core',
     icon: <Hammer className="w-5 h-5 text-brand-blue" />,
     image:
       'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=400',
-    desc: 'BGA rework under microscope. We desolder and replace blown power stages, cracked VRAM chips, or re-ball main silicon cores using premium alloys and infrared heating.',
+    desc: 'Pengerjaan ulang BGA di bawah mikroskop. Kami melepas dan mengganti fase daya yang terbakar, chip VRAM yang retak, atau melakukan re-balling chip core silikon utama menggunakan timah paduan premium.',
     checks: [
-      'Microscopic solder joints rework',
-      'BGA chip thermal profile run',
-      'UV solder-mask curing',
-      'VRAM memory chip swapping'
+      'Penyolderan ulang sambungan mikroskopis',
+      'Profil termal chip BGA',
+      'Pengeringan solder-mask UV',
+      'Penggantian chip memori VRAM'
     ]
   },
   {
     number: '04',
-    title: 'Extreme Stress Testing',
+    title: 'Pengujian Stres Ekstrem',
     icon: <Flame className="w-5 h-5 text-brand-blue" />,
     image:
       'https://images.unsplash.com/photo-1587202372430-612196025195?auto=format&fit=crop&q=80&w=400',
-    desc: 'We clean the heatsinks, apply premium Thermal Grizzly paste/pads, and run intense FurMark, TimeSpy, and PortRoyal looping benchmarks for 12 hours straight.',
+    desc: 'Kami membersihkan heatsink, mengaplikasikan pasta/pad termal Grizzly premium, dan menjalankan uji tolok ukur FurMark dan TimeSpy secara berulang selama 12 jam nonstop.',
     checks: [
-      '12-hour continuous burn-in load',
-      'VRAM thermal pad temperature log',
-      'Fan curve optimization profile',
-      'FPS stability validation'
+      'Uji beban penuh nonstop 12 jam',
+      'Log suhu thermal pad VRAM',
+      'Profil optimasi kurva kipas',
+      'Validasi stabilitas FPS'
     ]
   },
   {
     number: '05',
-    title: 'Premium Delivery',
+    title: 'Penyerahan Premium',
     icon: <Truck className="w-5 h-5 text-emerald-400" />,
     image:
       'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=400',
-    desc: 'Your card is wrapped in moisture-barrier anti-static bags, boxed securely, and shipped back with tracking, or ready for instant, certified local pickup.',
+    desc: 'Kartu grafis Anda dibungkus dalam kantong pelindung antistatis, dikemas dengan aman, dan siap diambil atau dikirim kembali dengan nomor pelacakan.',
     checks: [
-      'ESD protective shield bagging',
-      'Heavy foam padded packaging',
-      'Signature direct shipping track',
-      'Official 1-Year Warranty slip'
+      'Kemasan kantong pelindung ESD',
+      'Kemasan pelindung busa tebal',
+      'Nomor pelacakan pengiriman',
+      'Slip resmi Garansi 1 Tahun'
     ]
   }
 ];
@@ -97,19 +97,19 @@ export default function RepairProcessTimeline() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-            OUR PROTOCOL
+            PROTOKOL KAMI
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            The Certified 5-Step <br />
+            Alur Sertifikasi 5 Langkah <br />
             <span className="text-brand-blue font-extrabold">
-              Repair & Stress Process
+              Reparasi & Pengujian Stres
             </span>
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            We document everything. From the second your device lands in our
-            lab, it undergoes our standardized engineering flow to guarantee
-            success.
+            Kami mendokumentasikan segalanya. Sejak perangkat Anda tiba di lab
+            kami, perangkat tersebut menjalani alur rekayasa standar kami untuk
+            menjamin keberhasilan.
           </p>
         </div>
 
@@ -160,7 +160,7 @@ export default function RepairProcessTimeline() {
 
                     <div className="border-t border-white/5 pt-4">
                       <span className="font-mono text-[9px] font-bold text-brand-blue tracking-widest uppercase block mb-3">
-                        COMPLIANCE DELIVERABLES
+                        STANDAR KEPATUHAN HASIL
                       </span>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {step.checks.map((check, i) => (
@@ -185,16 +185,16 @@ export default function RepairProcessTimeline() {
                   transition={{ duration: 0.7 }}
                   className="w-full md:w-[44%] pl-14 md:pl-0 hidden sm:block"
                 >
-                  <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl aspect-[16/10] relative group">
+                  <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl aspect-16/10 relative group">
                     <img
                       src={step.image}
                       alt={step.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 select-none"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-4 left-4 font-mono text-[10px] text-brand-blue font-bold tracking-widest uppercase">
-                      PHASE {step.number} ACTIVE OPERATIONS
+                      OPERASI AKTIF FASE {step.number}
                     </div>
                   </div>
                 </motion.div>

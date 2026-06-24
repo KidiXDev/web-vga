@@ -30,7 +30,7 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
           referrerPolicy="no-referrer"
         />
         {/* Subtle dynamic grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:40px_40px] z-20 opacity-30" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-size-[40px_40px] z-20 opacity-30" />
       </div>
 
       {/* Main Container */}
@@ -46,7 +46,7 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
           >
             <Sparkles className="w-3.5 h-3.5 text-brand-blue" />
             <span className="font-mono text-[10px] font-semibold tracking-wider text-gray-400">
-              PREMIUM HARDWARE REBUILD LABORATORY
+              LABORATORIUM PERBAIKAN & RAKIT PC PREMIUM
             </span>
           </motion.div>
 
@@ -57,9 +57,9 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-display font-bold text-4xl sm:text-5xl xl:text-6xl tracking-tight leading-tight text-white mb-6 animate-fadeIn"
           >
-            Professional GPU Repair <br />
+            Reparasi GPU Profesional <br />
             <span className="text-brand-blue font-extrabold">
-              & Custom PC Engineering
+              & Perakitan PC Kustom
             </span>
           </motion.h1>
 
@@ -70,9 +70,9 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gray-400 text-base sm:text-lg max-w-xl leading-relaxed mb-10 font-sans"
           >
-            Avoid the waste of discarded graphics boards. We perform precise
-            component-level micro-soldering, VRAM expansion upgrades, and build
-            tailored clean-loop liquid cooled systems.
+            Jangan buang kartu grafis Anda yang rusak. Kami melakukan perbaikan
+            mikro-solder presisi tingkat komponen, upgrade VRAM, dan perakitan
+            PC gaming/workstation bersuhu dingin.
           </motion.p>
 
           {/* CTAs */}
@@ -86,14 +86,14 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
               onClick={onBookClick}
               className="w-full sm:w-auto px-8 py-4 font-display font-bold text-xs uppercase tracking-wider bg-brand-blue hover:bg-brand-blue/90 text-neutral-950 hover:scale-[1.02] active:scale-[0.98] rounded-xl transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer shadow-lg"
             >
-              Book Workbench Slot
+              Pesan Slot Reparasi
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </button>
             <button
               onClick={onBrowseClick}
               className="w-full sm:w-auto px-8 py-4 font-display font-bold text-xs uppercase tracking-wider border border-white/10 hover:border-brand-blue/30 text-white bg-white/5 hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98] rounded-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
             >
-              Browse Hardware Catalog
+              Lihat Katalog Hardware
             </button>
           </motion.div>
 
@@ -109,14 +109,14 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
               <div className="flex items-center gap-2 mb-1">
                 <Users className="w-4 h-4 text-brand-blue" />
                 <span className="font-mono text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                  REPAIRS COMPLETED
+                  REPARASI SELESAI
                 </span>
               </div>
               <span className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">
-                5,000+
+                5.000+
               </span>
               <span className="text-[10px] text-gray-500 font-medium">
-                Bespoke hardware restorations
+                Restorasi hardware kustom
               </span>
             </div>
 
@@ -125,14 +125,14 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
               <div className="flex items-center gap-2 mb-1">
                 <Shield className="w-4 h-4 text-brand-blue" />
                 <span className="font-mono text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                  WARRANTY SECURED
+                  GARANSI TERJAMIN
                 </span>
               </div>
               <span className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">
-                365 Days
+                365 Hari
               </span>
               <span className="text-[10px] text-gray-500 font-medium">
-                Fully covered laboratory warranty
+                Garansi servis penuh 1 tahun
               </span>
             </div>
 
@@ -141,14 +141,14 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
               <div className="flex items-center gap-2 mb-1">
                 <Star className="w-4 h-4 text-brand-blue fill-brand-blue/20" />
                 <span className="font-mono text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                  SATISFACTION RATING
+                  TINGKAT KEPUASAN
                 </span>
               </div>
               <span className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">
                 4.9 / 5.0
               </span>
               <span className="text-[10px] text-gray-500 font-medium">
-                From verified hardware enthusiasts
+                Dari pelanggan terverifikasi
               </span>
             </div>
           </motion.div>
@@ -175,16 +175,16 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
                 referrerPolicy="no-referrer"
               />
               {/* Overlay shadow gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-linear-to-t from-dark-bg via-transparent to-transparent opacity-80" />
 
               {/* Graphic card specs tag */}
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 flex justify-between items-center">
                 <div className="flex flex-col">
                   <span className="font-mono text-[9px] text-brand-blue font-bold tracking-widest uppercase">
-                    LAB WORKBENCH 01
+                    MEJA KERJA LAB 01
                   </span>
                   <span className="font-display font-bold text-sm text-white">
-                    NVIDIA RTX 4090 REBUILD
+                    REBUILD NVIDIA RTX 4090
                   </span>
                 </div>
                 <div className="px-2.5 py-1 rounded bg-brand-blue/10 border border-brand-blue/20 font-mono text-[10px] text-brand-blue font-bold">
@@ -214,17 +214,17 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
               initial={{ x: -20, y: 20, opacity: 0 }}
               animate={{ x: -25, y: 25, opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="absolute -bottom-4 -left-6 p-3 rounded-2xl bg-dark-card/95 border border-white/10 flex items-center gap-3 max-w-[210px] hidden sm:flex pointer-events-none"
+              className="absolute -bottom-4 -left-6 p-3 rounded-2xl bg-dark-card/95 border border-white/10 flex items-center gap-3 max-w-[210px] sm:flex pointer-events-none"
             >
               <div className="p-2.5 rounded-xl bg-brand-blue/10 text-brand-blue">
                 <Hammer className="w-4.5 h-4.5" />
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-bold text-xs text-white">
-                  Rework Lab
+                  Akahito Store
                 </span>
                 <span className="font-mono text-[9px] text-gray-500">
-                  100% ESD PROTECTED
+                  100% TERLINDUNGI ESD
                 </span>
               </div>
             </motion.div>

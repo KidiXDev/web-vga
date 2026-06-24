@@ -3,110 +3,110 @@ import type { GalleryItem, Product, RepairTicket, Service, Testimonial } from '.
 export const SERVICES: Service[] = [
   {
     id: 'gpu-repair',
-    title: 'Professional GPU Repair',
+    title: 'Reparasi GPU Profesional',
     shortDescription:
-      'Component-level motherboard repair, VRM rebuilding, memory chip replacement, and controller chips replacement.',
+      'Perbaikan motherboard tingkat komponen, pembangunan kembali VRM, penggantian chip memori, dan chip kontroler.',
     longDescription:
-      'Our certified technicians diagnose micro-shortages, rebuild burnt power stages (VRM), replace faulty GDDR6/HBM memory modules, and re-ball or replace GPU cores using professional BGA rework stations.',
+      'Teknisi bersertifikat kami mendiagnosis korsleting mikro, membangun kembali sirkuit daya yang terbakar (VRM), mengganti modul memori GDDR6/HBM yang rusak, serta melakukan re-balling atau penggantian chip core GPU menggunakan BGA rework station profesional.',
     image:
       'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=800',
-    basePrice: '$89',
-    turnaround: '3-5 Business Days',
+    basePrice: 'Rp 1.400.000',
+    turnaround: '3-5 Hari Kerja',
     highlights: [
-      'Micro-soldering VRM Rebuild',
-      'GDDR6 VRAM Replacement',
-      'BGA Reballing Service',
-      'Short Circuit Detection'
+      'Pembangunan Kembali VRM Solder-Mikro',
+      'Penggantian VRAM GDDR6',
+      'Jasa Reballing BGA',
+      'Deteksi Korsleting (Short Circuit)'
     ]
   },
   {
     id: 'custom-builds',
-    title: 'Custom Gaming & Workstation PCs',
+    title: 'Perakitan PC Kustom & Workstation',
     shortDescription:
-      'Bespoke liquid-cooled systems built for peak performance, extreme quietness, and custom aesthetics.',
+      'Sistem pendingin cairan kustom yang dirakit untuk kinerja puncak, keheningan maksimal, dan estetika premium.',
     longDescription:
-      'From high-airflow gaming rigs to custom open-loop hardline water cooling and multi-GPU deep learning workstations. Every system is hand-built, cable-managed to perfection, and stress-tested.',
+      'Mulai dari rig gaming aliran udara tinggi hingga pendingin cairan kustom hardline open-loop dan workstation deep learning multi-GPU. Setiap sistem dirakit dengan tangan, manajemen kabel yang sempurna, dan diuji stabilitasnya.',
     image:
       'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=800',
-    basePrice: '$150',
-    turnaround: '5-7 Business Days',
+    basePrice: 'Rp 2.400.000',
+    turnaround: '5-7 Hari Kerja',
     highlights: [
-      'Hardline/Softline Custom Loops',
-      'Optimized Fan & Noise Profiles',
-      'Clean Back-Panel Cable Routing',
-      '3-Year Assembly Warranty'
+      'Kustom Loop Hardline/Softline',
+      'Profil Kipas & Kebisingan Optimal',
+      'Manajemen Kabel Panel Belakang Rapi',
+      'Garansi Perakitan 3 Tahun'
     ]
   },
   {
     id: 'pc-troubleshooting',
-    title: 'Diagnostic & Troubleshooting',
+    title: 'Diagnosis & Pemecahan Masalah',
     shortDescription:
-      'Solve complex blue screens, random crashes, thermal throttling, or failures to boot.',
+      'Atasi blue screen (BSOD) yang rumit, crash acak, thermal throttling, atau gagal boot (tidak bisa POST).',
     longDescription:
-      "When your system fails under load or won't POST, we run rigorous component-by-component hardware tests, memory diagnostics, power supply ripple tests, and software audits to find the exact root cause.",
+      'Ketika sistem Anda gagal di bawah beban berat atau tidak bisa menyala (POST), kami menjalankan tes perangkat keras komponen-demi-komponen yang ketat, diagnosis memori, tes riak catu daya (PSU), dan audit perangkat lunak untuk menemukan penyebab utamanya.',
     image:
       'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=800',
-    basePrice: '$49',
-    turnaround: '24-48 Hours',
+    basePrice: 'Rp 800.000',
+    turnaround: '24-48 Jam',
     highlights: [
-      'Deep HW Diagnostic Audits',
-      'RAM & MemTest Stability Checks',
-      'OS Repair & Driver Cleanups',
-      'Boot Failure Resolution'
+      'Audit Diagnosis Perangkat Keras Mendalam',
+      'Pemeriksaan Stabilitas RAM & MemTest',
+      'Perbaikan OS & Pembersihan Driver',
+      'Resolusi Kegagalan Boot'
     ]
   },
   {
     id: 'thermal-service',
-    title: 'Thermal Maintenance & Liquid Metal',
+    title: 'Perawatan Suhu & Liquid Metal',
     shortDescription:
-      'Lower GPU/CPU temperatures by up to 25°C. Replacing factory thermal paste with liquid metal or premium pads.',
+      'Turunkan suhu GPU/CPU hingga 25°C. Mengganti pasta termal bawaan dengan liquid metal atau thermal pad premium.',
     longDescription:
-      'Are your fans screaming or is your device thermal throttling? We completely disassemble your GPU and CPU, clean off crusty factory paste, and apply premium compounds (Thermal Grizzly Kryonaut, Kryosheets, or Liquid Metal for extreme users).',
+      'Apakah kipas Anda bising atau perangkat Anda mengalami penurunan performa akibat panas (thermal throttling)? Kami membongkar seluruh GPU dan CPU Anda, membersihkan pasta pabrik yang sudah kering, dan mengaplikasikan senyawa premium (Thermal Grizzly Kryonaut, Kryosheets, atau Liquid Metal untuk pengguna ekstrem).',
     image:
       'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
-    basePrice: '$39',
-    turnaround: 'Same-Day Service',
+    basePrice: 'Rp 600.000',
+    turnaround: 'Selesai di Hari yang Sama',
     highlights: [
-      'Thermal Grizzly Paste Application',
-      'High-Performance Gelid Thermal Pads',
-      'Copper Shim Modding for VRAM',
-      'Temperature Drop Guaranteed'
+      'Aplikasi Pasta Termal Grizzly Premium',
+      'Thermal Pad Gelid Berkinerja Tinggi',
+      'Modifikasi Copper Shim untuk VRAM',
+      'Garansi Penurunan Suhu'
     ]
   },
   {
     id: 'laptop-repair',
-    title: 'Premium Laptop Gaming Repair',
+    title: 'Reparasi Laptop Gaming Premium',
     shortDescription:
-      'Repair of high-end gaming laptops (ROG, Alienware, Razer) including screen, hinge, power jack, and liquid spill repairs.',
+      'Reparasi laptop gaming kelas atas (ROG, Alienware, Razer) termasuk layar, engsel, colokan daya (DC jack), dan perbaikan tumpahan cairan.',
     longDescription:
-      'Gaming laptops pack desktop-class hardware into tiny spaces. We specialize in delicate laptop repairs: fixing broken power DC jacks, soldering burnt motherboards, cleaning up liquid spills, and resolving internal short circuits.',
+      'Laptop gaming mengemas perangkat keras kelas desktop ke dalam ruang yang sangat sempit. Kami berspesialisasi dalam perbaikan laptop yang sensitif: menyolder colokan daya yang rusak, menyolder motherboard yang terbakar, membersihkan tumpahan cairan, dan mengatasi korsleting internal.',
     image:
       'https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&q=80&w=800',
-    basePrice: '$99',
-    turnaround: '2-4 Business Days',
+    basePrice: 'Rp 1.600.000',
+    turnaround: '2-4 Hari Kerja',
     highlights: [
-      'Liquid Damage Cleaning',
-      'Charging Port Soldering',
-      'Screen & Hinge Replacement',
-      'Ultrabook Liquid Metal Repaste'
+      'Pembersihan Kerusakan Akibat Cairan',
+      'Penyolderan Port Pengisian Daya',
+      'Penggantian Layar & Engsel',
+      'Repaste Liquid Metal Ultrabook'
     ]
   },
   {
     id: 'gpu-cleaning',
-    title: 'Deep GPU Cleaning & Maintenance',
+    title: 'Pembersihan Mendalam & Perawatan GPU',
     shortDescription:
-      'Full restoration of dusty, oxidized, or thermal-throttle bound graphics cards to brand new condition.',
+      'Restorasi penuh kartu grafis yang berdebu, teroksidasi, atau mengalami panas berlebih ke kondisi seperti baru.',
     longDescription:
-      'Protect your GPU investment. Our full restoration service includes deep ultrasonic bath cleaning of the heatsink, dust removal from fans, board cleaning using isopropyl alcohol, and brand new thermal paste and pads.',
+      'Lindungi investasi GPU Anda. Layanan restorasi penuh kami meliputi pembersihan heatsink dengan bak ultrasonik mendalam, pembersihan debu dari kipas, pembersihan papan PCB menggunakan alkohol isopropil, serta penggantian pasta termal dan pad baru.',
     image:
       'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=800',
-    basePrice: '$59',
-    turnaround: 'Same-Day Service',
+    basePrice: 'Rp 950.000',
+    turnaround: 'Selesai di Hari yang Sama',
     highlights: [
-      'Ultrasonic Heatsink Cleaning',
-      'PCB De-oxidation Treatment',
-      'Fan Bearing Lubrication',
-      'Full Burn-In Benchmarks'
+      'Pembersihan Heatsink Ultrasonik',
+      'Pembersihan Oksidasi PCB',
+      'Lubrikasi Bearing Kipas',
+      'Uji Tolok Ukur Beban Penuh (Burn-in)'
     ]
   }
 ];
@@ -116,16 +116,16 @@ export const PRODUCTS: Product[] = [
     id: 'p1',
     name: 'NVIDIA GeForce RTX 4090 OC Edition 24GB',
     category: 'gpu',
-    price: 1899,
-    originalPrice: 2099,
+    price: 31000000,
+    originalPrice: 34000000,
     image:
       'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=600',
     rating: 4.9,
     specs: [
       '24GB GDDR6X VRAM',
-      'Ada Lovelace Architecture',
+      'Arsitektur Ada Lovelace',
       'DLSS 3.0 & Frame Generation',
-      'Triple-fan vapor chamber'
+      'Vapor chamber dengan tiga kipas'
     ],
     inStock: true,
     isPopular: true
@@ -134,15 +134,15 @@ export const PRODUCTS: Product[] = [
     id: 'p2',
     name: 'AMD Ryzen 7 7800X3D 8-Core 5.0GHz',
     category: 'cpu',
-    price: 369,
+    price: 6000000,
     image:
       'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600',
     rating: 4.8,
     specs: [
-      '8 Cores / 16 Threads',
+      '8 Core / 16 Thread',
       '96MB 3D V-Cache',
-      'Best Gaming Processor',
-      'Socket AM5 Compatible'
+      'Prosesor Gaming Terbaik',
+      'Kompatibel dengan Socket AM5'
     ],
     inStock: true,
     isPopular: true
@@ -151,16 +151,16 @@ export const PRODUCTS: Product[] = [
     id: 'p3',
     name: 'ROG Maximus Z790 Dark Hero',
     category: 'motherboard',
-    price: 649,
-    originalPrice: 699,
+    price: 10500000,
+    originalPrice: 11200000,
     image:
       'https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80&w=600',
     rating: 4.7,
     specs: [
-      'Intel LGA 1700 Socket',
-      'PCIe 5.0 ready',
+      'Socket Intel LGA 1700',
+      'Mendukung PCIe 5.0',
       '20+1+2 Power Stages',
-      'Wi-Fi 7 Integration'
+      'Integrasi Wi-Fi 7'
     ],
     inStock: true
   },
@@ -168,15 +168,15 @@ export const PRODUCTS: Product[] = [
     id: 'p4',
     name: 'Corsair Dominator Titanium DDR5 64GB 6000MHz',
     category: 'ram',
-    price: 289,
+    price: 4700000,
     image:
       'https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&q=80&w=600',
     rating: 4.8,
     specs: [
-      '64GB Kit (2x32GB)',
-      'CL30 Ultra-Low Latency',
-      'Intel XMP 3.0 Support',
-      'Premium RGB Diffuser'
+      'Kit 64GB (2x32GB)',
+      'Latensi Sangat Rendah CL30',
+      'Mendukung Intel XMP 3.0',
+      'Diffuser RGB Premium'
     ],
     inStock: true
   },
@@ -184,15 +184,15 @@ export const PRODUCTS: Product[] = [
     id: 'p5',
     name: 'Seasonic PRIME TX-1600 Titanium 1600W',
     category: 'psu',
-    price: 499,
+    price: 8200000,
     image:
       'https://images.unsplash.com/photo-1551645121-d1034da75057?auto=format&fit=crop&q=80&w=600',
     rating: 4.9,
     specs: [
       '1600W 80+ Titanium',
-      'Fully Modular Design',
-      'ATX 3.0 & Native PCIe 5.0',
-      '12VHPWR Cable Included'
+      'Desain Fully Modular',
+      'ATX 3.0 & PCIe 5.0 Native',
+      'Termasuk Kabel 12VHPWR'
     ],
     inStock: true
   },
@@ -200,16 +200,16 @@ export const PRODUCTS: Product[] = [
     id: 'p6',
     name: 'Lian Li O11 Dynamic EVO XL RGB Black',
     category: 'case',
-    price: 245,
-    originalPrice: 269,
+    price: 4000000,
+    originalPrice: 4400000,
     image:
       'https://images.unsplash.com/photo-1587202372430-612196025195?auto=format&fit=crop&q=80&w=600',
     rating: 4.8,
     specs: [
       'Full-Tower Dual Chamber',
-      'Top & Bottom RGB Strips',
-      'Highly Modular GPU Layout',
-      'Fits Triple 420mm Radiators'
+      'Strip RGB Atas & Bawah',
+      'Tata Letak GPU Sangat Modular',
+      'Muat Tiga Radiator 420mm'
     ],
     inStock: true,
     isPopular: true
@@ -220,92 +220,92 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
     name: 'Alexander Mercer',
-    role: 'Deep Learning Engineer',
+    role: 'Insinyur Deep Learning',
     avatar:
       'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150',
     rating: 5,
-    text: 'My $2,000 RTX 4090 died in the middle of training a critical neural network model. ASUS refused RMA due to a physical scratch on the PCB. These guys located a blown capacitor near the PCIe slot, soldered a new one on, and returned it working within 4 days. Incredible save!',
-    repairType: 'Blown VRM & Capacitor Repair',
-    date: '2 weeks ago'
+    text: 'GPU RTX 4090 saya seharga Rp 31 juta mati di tengah pelatihan model jaringan saraf tiruan yang kritis. Vendor menolak garansi karena ada goresan fisik pada PCB. Tim di sini menemukan kapasitor yang meledak di dekat slot PCIe, menyolder yang baru, dan mengembalikannya dalam kondisi bekerja dalam 4 hari. Penyelamatan luar biasa!',
+    repairType: 'Perbaikan VRM & Kapasitor Terbakar',
+    date: '2 minggu yang lalu'
   },
   {
     id: 't2',
     name: 'Seraphina Vance',
-    role: 'Competitive Streamer',
+    role: 'Streamer Kompetitif',
     avatar:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
     rating: 5,
-    text: 'My custom watercooled build was suffering from micro-stuttering and high liquid temperatures. AeroGPU re-ran the hardline PETG tubing, cleaned the custom CPU block, and replaced the pads. Temperatures dropped by 18°C. Absolute professionals.',
-    repairType: 'Hardline Custom Loop Rebuild',
-    date: '1 month ago'
+    text: 'PC kustom watercooling saya mengalami micro-stuttering dan suhu cairan sangat panas. Akahito Store merapikan kembali pipa PETG hardline, membersihkan blok CPU, dan mengganti pad termal. Suhu turun hingga 18°C. Benar-benar profesional.',
+    repairType: 'Pembangunan Ulang Hardline Kustom Loop',
+    date: '1 bulan yang lalu'
   },
   {
     id: 't3',
     name: 'Derrick Chen',
-    role: 'Indie Game Developer',
+    role: 'Pengembang Game Independen',
     avatar:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150',
     rating: 5,
-    text: 'Brought in an RTX 3080 with dead memory channels (errors on channel B). They swapped out the faulty GDDR6 VRAM chips under a microscope right in front of me. Stress-testing graphs are totally flat line now. Best hardware service around!',
-    repairType: 'GDDR6 VRAM Swap & Reballing',
-    date: '3 weeks ago'
+    text: 'Membawa RTX 3080 dengan kerusakan saluran memori (error pada saluran B). Mereka mengganti chip VRAM GDDR6 yang rusak di bawah mikroskop langsung di depan saya. Grafik uji stres sekarang benar-benar stabil. Layanan hardware terbaik!',
+    repairType: 'Penggantian & Reballing VRAM GDDR6',
+    date: '3 minggu yang lalu'
   }
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'g1',
-    title: 'Thermal Grizzly Liquid Metal Application',
+    title: 'Aplikasi Liquid Metal Thermal Grizzly',
     category: 'workshop',
     image:
       'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800',
     description:
-      'Applying precise liquid metal interface shielding for an enthusiast GPU overclocking build.'
+      'Mengaplikasikan lapisan pelindung liquid metal presisi untuk rakitan GPU overclocking tingkat enthusiast.'
   },
   {
     id: 'g2',
-    title: 'Hardline Liquid Loop Showcase',
+    title: 'Pameran Kustom Loop Hardline',
     category: 'builds',
     image:
       'https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&q=80&w=800',
     description:
-      'Perfect 90-degree parallel bends on satin frosted tubing with UV-purple fluid.'
+      'Lekukan paralel 90 derajat yang sempurna pada pipa satin frosted dengan cairan UV-purple.'
   },
   {
     id: 'g3',
-    title: 'Microscope BGA Repair Desk',
+    title: 'Meja Kerja Reparasi BGA Mikroskop',
     category: 'microscope',
     image:
       'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=800',
     description:
-      'Soldering high-frequency power controllers under our high-definition dental microscope.'
+      'Menyolder pengontrol daya frekuensi tinggi di bawah mikroskop definisi tinggi di lab kami.'
   },
   {
     id: 'g4',
-    title: 'Enthusiast Desk Battle-Station',
+    title: 'Battle-Station Desktop Kustom',
     category: 'builds',
     image:
       'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800',
     description:
-      'Custom client setup with triple monitor rig synced with ambient lighting.'
+      'Setup kustom pelanggan dengan tiga monitor yang disinkronkan dengan pencahayaan ambien.'
   },
   {
     id: 'g5',
-    title: 'Silicon Dies and Heatpipes',
+    title: 'Silicon Die dan Pipa Panas (Heatpipe)',
     category: 'gpus',
     image:
       'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80&w=800',
     description:
-      'Exposing cooling copper chambers and re-routing high performance fins.'
+      'Membuka ruang tembaga pendingin dan merapikan kembali sirip pembuang panas berkinerja tinggi.'
   },
   {
     id: 'g6',
-    title: 'Precision Assembly Center',
+    title: 'Pusat Perakitan Presisi',
     category: 'workshop',
     image:
       'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=800',
     description:
-      'Each PC custom builds are assembled in our dust-controlled anti-static workstations.'
+      'Setiap rakitan PC kustom dirakit di workstation anti-statis bebas debu kami.'
   }
 ];
 
@@ -325,45 +325,45 @@ export const SAMPLE_TICKETS: { [key: string]: RepairTicket } = {
     id: 'GPU-9842',
     customerName: 'Marcus Aurelius',
     deviceModel: 'MSI Trio RTX 3080 10GB',
-    issue: 'Artifacting under heavy load / Code 43 error',
+    issue: 'Artifacting saat beban berat / Error Code 43',
     status: 'repair',
-    lastUpdated: 'Today at 08:30 AM',
+    lastUpdated: 'Hari ini jam 08:30 WIB',
     progress: 60,
     notes: [
-      'Device checked in: Physical damage around GDDR6 chip identified.',
-      'Diagnostic report: Thermal cycling broke micro solder balls underneath Memory Chip B0.',
-      'Repair phase: Removing memory chip, cleaning pads, and re-soldering new Micron GDDR6 memory chip.',
-      'Up next: Thermal assembly replacement and 12-hour TimeSpy stress benchmark run.'
+      'Perangkat masuk: Kerusakan fisik di sekitar chip GDDR6 teridentifikasi.',
+      'Laporan diagnosis: Siklus panas merusak bola solder mikro di bawah Chip Memori B0.',
+      'Tahap perbaikan: Melepas chip memori, membersihkan pad, dan menyolder chip memori Micron GDDR6 baru.',
+      'Selanjutnya: Penggantian unit termal dan pengujian stres benchmark TimeSpy selama 12 jam.'
     ]
   },
   'SYS-2415': {
     id: 'SYS-2415',
     customerName: 'Elena Rostova',
-    deviceModel: 'Custom Liquid Cooled Gaming Tower',
-    issue: 'CPU thermal throttling & pump rattle',
+    deviceModel: 'PC Gaming Kustom Liquid Cooled',
+    issue: 'CPU thermal throttling & pompa berisik',
     status: 'testing',
-    lastUpdated: 'Yesterday at 04:15 PM',
+    lastUpdated: 'Kemarin jam 16:15 WIB',
     progress: 80,
     notes: [
-      'System diagnosed: Corsair H150i AIO pump failure detected.',
-      'Replacement: Brand new NZXT Kraken Elite 360 RGB installed.',
-      'Maintenance: Premium Thermal Grizzly Kryonaut applied.',
-      'Testing phase: Running Cinebench R23 looping load; CPU temperatures stabilized at peak 74°C (was 98°C).'
+      'Diagnosis sistem: Kerusakan pompa AIO Corsair H150i terdeteksi.',
+      'Penggantian: Memasang NZXT Kraken Elite 360 RGB baru.',
+      'Perawatan: Mengaplikasikan Thermal Grizzly Kryonaut premium.',
+      'Tahap pengujian: Menjalankan pengujian Cinebench R23 berulang; suhu CPU stabil pada puncak 74°C (sebelumnya 98°C).'
     ]
   },
   'GPU-7301': {
     id: 'GPU-7301',
     customerName: 'Jonathan Joestar',
     deviceModel: 'ASUS TUF RX 7900 XTX',
-    issue: 'Complete power loss / Dead short-circuit',
+    issue: 'Mati total / Korsleting penuh',
     status: 'ready',
-    lastUpdated: 'Today at 09:15 AM',
+    lastUpdated: 'Hari ini jam 09:15 WIB',
     progress: 100,
     notes: [
-      'Diagnosis: Blown high-side DrMOS chip on Phase 6 creating a direct 12V short-to-ground.',
-      'Repair phase: Removed DrMOS, cleaned burnt copper traces, re-bridged and installed high-grade 70A Power Stage.',
-      'Testing: 24-hour Furmark burn-in completed successfully. Temperatures stable at 65°C core, 82°C hotspot.',
-      'Status: Fully repaired, packed in protective ESD bags, and ready for pickup.'
+      'Diagnosis: Chip DrMOS sisi atas rusak pada Phase 6 menyebabkan korsleting langsung ke ground.',
+      'Tahap perbaikan: Melepas DrMOS, membersihkan jalur tembaga terbakar, menghubungkan kembali dan memasang Power Stage 70A berspesifikasi tinggi.',
+      'Pengujian: Uji stres Furmark 24 jam selesai dengan sukses. Suhu stabil di 65°C core, 82°C hotspot.',
+      'Status: Perbaikan selesai penuh, dikemas dalam kantong pelindung ESD, siap diambil.'
     ]
   }
 };

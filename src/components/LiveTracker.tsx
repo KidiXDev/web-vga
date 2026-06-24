@@ -39,7 +39,7 @@ export default function LiveTracker({
       setSearchError(null);
     } else {
       setSearchError(
-        `No active ticket found with ID "${id}". Try "GPU-7301" or "GPU-9842" for testing.`
+        `Tiket aktif dengan ID "${id}" tidak ditemukan. Coba masukkan "GPU-7301" or "GPU-9842" untuk pengujian.`
       );
       setActiveTicket(null);
     }
@@ -48,7 +48,7 @@ export default function LiveTracker({
   const statusPhases = [
     {
       key: 'inspection',
-      label: '1. Inspection',
+      label: '1. Inspeksi',
       icon: <Search className="w-4 h-4" />
     },
     {
@@ -58,17 +58,17 @@ export default function LiveTracker({
     },
     {
       key: 'repair',
-      label: '3. Board Repair',
+      label: '3. Reparasi Board',
       icon: <Wrench className="w-4 h-4" />
     },
     {
       key: 'testing',
-      label: '4. Bench Stress',
+      label: '4. Uji Stabilitas',
       icon: <Activity className="w-4 h-4" />
     },
     {
       key: 'ready',
-      label: '5. Ready',
+      label: '5. Selesai',
       icon: <CheckCircle2 className="w-4 h-4" />
     }
   ];
@@ -105,10 +105,10 @@ export default function LiveTracker({
                 </div>
                 <div className="flex flex-col text-left">
                   <span className="font-mono text-2xs text-brand-blue font-bold tracking-widest uppercase">
-                    AEROGPU SECURE PORTAL
+                    PORTAL AMAN AKAHITO STORE
                   </span>
                   <h2 className="font-display font-bold text-lg sm:text-xl text-white">
-                    Live Repair Tracker Console
+                    Konsol Pelacak Perbaikan Real-Time
                   </h2>
                 </div>
               </div>
@@ -127,15 +127,15 @@ export default function LiveTracker({
               {/* Search ticket input form */}
               <div className="max-w-xl mx-auto mb-10 text-center">
                 <p className="text-xs text-gray-400 mb-4 font-sans leading-relaxed">
-                  Enter your unique alphanumeric Repair ID (e.g.{' '}
+                  Masukkan ID Perbaikan alfanumerik unik Anda (contoh:{' '}
                   <span className="font-mono text-brand-blue font-semibold">
                     GPU-9842
                   </span>{' '}
-                  or{' '}
+                  atau{' '}
                   <span className="font-mono text-brand-blue font-semibold">
                     GPU-7301
                   </span>
-                  ) to access our central repair tracking nodes.
+                  ) untuk mengakses node pelacakan perbaikan kami.
                 </p>
 
                 <form onSubmit={handleSearch} className="flex gap-2">
@@ -143,7 +143,7 @@ export default function LiveTracker({
                     <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-gray-500" />
                     <input
                       type="text"
-                      placeholder="ENTER REPAIR ID (e.g. GPU-7301)"
+                      placeholder="MASUKKAN ID PERBAIKAN (CONTOH: GPU-7301)"
                       value={ticketId}
                       onChange={(e) => setTicketId(e.target.value)}
                       className="w-full pl-11 pr-4 py-3 bg-white/5 border border-white/10 focus:border-brand-blue rounded-xl text-sm font-mono tracking-wider uppercase text-white outline-none transition-all"
@@ -153,7 +153,7 @@ export default function LiveTracker({
                     type="submit"
                     className="px-6 py-3 bg-brand-blue hover:bg-brand-blue/80 text-neutral-950 font-display font-bold text-xs rounded-xl transition-all hover:scale-[1.02] cursor-pointer"
                   >
-                    CONNECT
+                    HUBUNGKAN
                   </button>
                 </form>
 
@@ -178,7 +178,7 @@ export default function LiveTracker({
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 rounded-2xl bg-white/5 border border-white/5">
                       <div className="flex flex-col">
                         <span className="font-mono text-[9px] text-gray-500 uppercase tracking-wider">
-                          REPAIR ID
+                          ID PERBAIKAN
                         </span>
                         <span className="font-mono text-base font-bold text-brand-blue">
                           {activeTicket.id}
@@ -186,7 +186,7 @@ export default function LiveTracker({
                       </div>
                       <div className="flex flex-col">
                         <span className="font-mono text-[9px] text-gray-500 uppercase tracking-wider">
-                          HARDWARE MODEL
+                          MODEL HARDWARE
                         </span>
                         <span className="font-display text-sm font-bold text-white">
                           {activeTicket.deviceModel}
@@ -194,7 +194,7 @@ export default function LiveTracker({
                       </div>
                       <div className="flex flex-col">
                         <span className="font-mono text-[9px] text-gray-500 uppercase tracking-wider">
-                          REPORTED FAULT
+                          KERUSAKAN DIADUKAN
                         </span>
                         <span className="text-xs text-gray-300 font-sans line-clamp-1">
                           {activeTicket.issue}
@@ -206,10 +206,10 @@ export default function LiveTracker({
                     <div>
                       <div className="flex justify-between items-center mb-4">
                         <span className="font-mono text-[10px] font-bold text-brand-blue tracking-widest uppercase">
-                          PHASE TIMELINE STATUS
+                          STATUS LINIMASA FASE
                         </span>
                         <span className="font-mono text-xs text-brand-blue font-bold">
-                          {activeTicket.progress}% COMPLETE
+                          {activeTicket.progress}% SELESAI
                         </span>
                       </div>
 
@@ -268,12 +268,12 @@ export default function LiveTracker({
                     <div className="p-6 rounded-2xl bg-black/60 border border-white/5 font-mono">
                       <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
                         <span className="text-[10px] font-bold text-brand-blue uppercase tracking-widest">
-                          LAB WORKBENCH LOGS // ESD SHIELDED DESK
+                          LOG MEJA KERJA LAB // MEJA TERLINDUNGI ESD
                         </span>
                         <div className="flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 bg-brand-blue rounded-full animate-ping" />
                           <span className="text-[9px] text-gray-500">
-                            LIVE SYNCED
+                            TERKONEKSI LIVE
                           </span>
                         </div>
                       </div>
@@ -297,11 +297,10 @@ export default function LiveTracker({
                   <div className="py-12 border-2 border-dashed border-white/5 rounded-3xl flex flex-col items-center justify-center text-center max-w-md mx-auto">
                     <Terminal className="w-10 h-10 text-gray-600 mb-4" />
                     <span className="font-display font-bold text-sm text-gray-400 mb-2">
-                      Awaiting System Connection
+                      Menunggu Koneksi Sistem
                     </span>
                     <p className="text-xs text-gray-500 font-sans px-6">
-                      No active ticket loaded. Please search an ID above to pull
-                      current telemetry status.
+                      Tidak ada tiket aktif yang dimuat. Silakan cari ID di atas untuk melihat status telemetri saat ini.
                     </p>
                   </div>
                 )}
@@ -310,8 +309,7 @@ export default function LiveTracker({
 
             {/* Footer console note */}
             <div className="p-4 bg-black/40 border-t border-white/5 text-center font-mono text-[9px] text-gray-500">
-              SECURED VIA AEROGPU LAB CENTRAL CORE • CURRENT TIMESTAMP:
-              2026-06-23
+              DIAMANKAN MELALUI PORTAL PUSAT AKAHITO STORE • WAKTU SEKARANG: 2026-06-24
             </div>
           </motion.div>
         </div>

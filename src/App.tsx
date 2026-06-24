@@ -16,38 +16,29 @@ import type { Product, RepairTicket } from './types';
 
 export default function App() {
   const [isTrackerOpen, setIsTrackerOpen] = useState(false);
-  const [customTickets, setCustomTickets] = useState<{
+  const [customTickets] = useState<{
     [key: string]: RepairTicket;
   }>({});
-  const [prefilledContactNotes, setPrefilledContactNotes] = useState('');
 
-  // Handle registering a newly created ticket from the contact booking form
-  const handleNewTicketCreated = (newTicket: RepairTicket) => {
-    setCustomTickets((prev) => ({
-      ...prev,
-      [newTicket.id]: newTicket
-    }));
-  };
-
-  // Handle assembly quote transfer from product catalog to contact booking form
+  // Handle assembly quote transfer from product catalog directly to WhatsApp
   const handleAddToQuoteRequest = (selectedParts: Product[]) => {
+    if (selectedParts.length === 0) {
+      alert('Keranjang estimasi Anda kosong.');
+      return;
+    }
     const partsList = selectedParts
-      .map((p) => `- ${p.name} ($${p.price})`)
+      .map((p) => `- ${p.name} (Rp ${p.price.toLocaleString('id-ID')})`)
       .join('\n');
-    const note = `I would like to request a Custom PC Assembly Quote for the following components:\n\n${partsList}\n\nPlease prepare my workbench diagnostics.`;
-    setPrefilledContactNotes(note);
+    const message = `Halo Akahito Store Semarang, saya ingin memesan perakitan PC Kustom dengan komponen berikut:\n\n${partsList}`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/6289660225666?text=${encodedMessage}`, '_blank');
   };
 
-  // Handle quick booking directly from services modal selection
+  // Handle quick booking directly from services modal selection to WhatsApp
   const handleBookService = (serviceName: string) => {
-    const note = `I would like to book the following service: ${serviceName}.\nPlease allocate my diagnostic workbench.`;
-    setPrefilledContactNotes(note);
-
-    // Smooth scroll to contact form
-    const contactSec = document.querySelector('#contact');
-    if (contactSec) {
-      contactSec.scrollIntoView({ behavior: 'smooth' });
-    }
+    const message = `Halo Akahito Store Semarang, saya ingin memesan layanan reparasi: ${serviceName}`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/6289660225666?text=${encodedMessage}`, '_blank');
   };
 
   const handleBookClickHero = () => {
@@ -103,11 +94,7 @@ export default function App() {
       <Gallery />
 
       {/* Booking Form and cyber-map */}
-      <ContactForm
-        prefilledNotes={prefilledContactNotes}
-        onNewTicketCreated={handleNewTicketCreated}
-        onOpenTracker={() => setIsTrackerOpen(true)}
-      />
+      <ContactForm />
 
       {/* Footer element */}
       <Footer />

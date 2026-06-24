@@ -11,19 +11,17 @@ export default function Testimonials() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-            CUSTOMER SUCCESS
+            KEBERHASILAN PELANGGAN
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            Hardware Saved From <br />
+            Menyelamatkan Perangkat Keras <br />
             <span className="text-brand-blue font-extrabold">
-              The Electronic Graveyard
+              Dari Kuburan Elektronik
             </span>
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            We repair cards that graphics card brands refuse to warrant. Read
-            first-hand reviews from professional deep learning engineers, game
-            devs, and gaming enthusiasts.
+            Kami memperbaiki komponen yang ditolak garansinya oleh produsen resmi. Baca ulasan langsung dari insinyur deep learning, pengembang game, dan pencinta PC gaming.
           </p>
         </div>
 

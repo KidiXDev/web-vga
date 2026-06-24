@@ -4,33 +4,33 @@ export default function WhyChooseUs() {
   const achievements = [
     {
       icon: <Coins className="w-6 h-6 text-brand-blue" />,
-      title: '80% Average Savings',
-      desc: 'Component-level solder repair (replacing a blown $2 capacitor) saves you from buying a new $1,200 board.'
+      title: 'Hemat Rata-Rata 80%',
+      desc: 'Perbaikan solder tingkat komponen (seperti mengganti kapasitor seharga Rp 35.000) menyelamatkan Anda dari membeli board baru seharga belasan juta rupiah.'
     },
     {
       icon: <Award className="w-6 h-6 text-brand-blue" />,
-      title: 'Certified BGA Reworkers',
-      desc: 'Our senior soldering technicians hold IPC-7711/7721 micro-rework and circuit recovery credentials.'
+      title: 'Teknisi BGA Bersertifikat',
+      desc: 'Teknisi solder senior kami memiliki kualifikasi micro-rework dan pemulihan sirkuit tingkat industri.'
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-emerald-400" />,
-      title: '1-Year Full Warranty',
-      desc: 'We guarantee our soldering joints, memory chip replacements, and components for 365 days.'
+      title: 'Garansi Penuh 1 Tahun',
+      desc: 'Kami menjamin kualitas sambungan solder kami, penggantian chip memori, dan komponen lainnya selama 365 hari.'
     }
   ];
 
   const standards = [
     {
-      title: 'ESD SAFE GROUNDING',
-      desc: 'Strict electrostatic discharge wristbands and mats protect sensitive logic boards.'
+      title: 'GROUNDING AMAN ESD',
+      desc: 'Gelang tangan dan alas antistatis yang ketat melindungi papan sirkuit logika yang sensitif.'
     },
     {
-      title: 'NITROGEN ATOMIZATION',
-      desc: 'Using specialized nitrogen gas soldering ovens prevents micro-voiding or oxidation.'
+      title: 'ATOMISASI NITROGEN',
+      desc: 'Menggunakan oven penyolderan gas nitrogen khusus mencegah kerusakan mikro (micro-voiding) atau oksidasi.'
     },
     {
-      title: 'ULTRASONIC WASHING',
-      desc: 'Every board is fully submerged in customized de-ionized fluid baths to wash off burnt rosin flux.'
+      title: 'PENCUCIAN ULTRASONIK',
+      desc: 'Setiap papan sirkuit dicuci dalam cairan khusus de-ionisasi untuk menghilangkan residu fluks sisa penyolderan.'
     }
   ];
 
@@ -49,21 +49,21 @@ export default function WhyChooseUs() {
             <div className="absolute inset-0 bg-brand-blue/3 blur-[80px] -z-10 rounded-full" />
 
             {/* Main high-res workshop image */}
-            <div className="col-span-12 rounded-3xl overflow-hidden border border-white/10 relative aspect-[16/10] group">
+            <div className="col-span-12 rounded-3xl overflow-hidden border border-white/10 relative aspect-16/10 group">
               <img
                 src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=800"
                 alt="Elite Anti-Static Custom PC Workshop"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 font-mono text-[9px] text-gray-400 uppercase tracking-widest">
-                Main ESD Assembly Lab
+                Lab Utama Perakitan ESD
               </div>
             </div>
 
             {/* Second offset image (technician close-up) */}
-            <div className="col-span-7 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative aspect-[4/3] group">
+            <div className="col-span-7 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative aspect-4/3 group">
               <img
                 src="https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=600"
                 alt="Soldering Graphics Card VRM Power Stages"
@@ -74,15 +74,15 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Micro statistic panel */}
-            <div className="col-span-5 p-4 rounded-2xl bg-gradient-to-tr from-dark-card to-white/5 border border-white/10 flex flex-col justify-center items-center shadow-2xl">
+            <div className="col-span-5 p-4 rounded-2xl bg-linear-to-tr from-dark-card to-white/5 border border-white/10 flex flex-col justify-center items-center shadow-2xl">
               <span className="font-mono text-2xs text-brand-blue tracking-widest font-bold uppercase mb-1">
-                SUCCESS RATE
+                TINGKAT SUKSES
               </span>
               <span className="font-display font-extrabold text-3xl sm:text-4xl text-white">
                 98.4%
               </span>
               <span className="text-[10px] text-gray-500 font-medium text-center">
-                On general board diagnostics
+                Untuk diagnosis sirkuit umum
               </span>
             </div>
           </div>
@@ -90,17 +90,17 @@ export default function WhyChooseUs() {
           {/* Copy & Core Competencies (Right - 7 cols) */}
           <div className="lg:col-span-7 text-left">
             <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-              WARRANTY & ASSURANCES
+              GARANSI & JAMINAN
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6 animate-fadeIn">
-              Why Desktop Enthusiasts <br />
-              <span className="text-brand-blue">Trust AeroGPU Services</span>
+              Mengapa Para Antusias PC <br />
+              <span className="text-brand-blue">Mempercayai Akahito Store</span>
             </h2>
             <p className="text-gray-400 text-base sm:text-lg mb-8 leading-relaxed font-sans">
-              Unlike big box retail stores that simply recommend replacing dead
-              motherboards or throwing away crashed graphics cards, we dig deep.
-              We isolate microvolt power drops on thermal tracks to restore your
-              valuable physical cards.
+              Berbeda dengan toko ritel besar yang langsung menyarankan Anda
+              mengganti motherboard mati atau membuang kartu grafis rusak, kami
+              menganalisis lebih dalam. Kami melacak penurunan tegangan mikro
+              pada sirkuit termal untuk memulihkan komponen berharga Anda.
             </p>
 
             {/* Achievements row */}
@@ -128,7 +128,7 @@ export default function WhyChooseUs() {
             {/* Laboratory standard ticker */}
             <div className="border-t border-white/10 pt-6">
               <span className="font-mono text-2xs font-bold text-brand-blue tracking-wider uppercase block mb-4">
-                STRICT LABORATORY STANDARDS
+                STANDAR LABORATORIUM YANG KETAT
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {standards.map((std, i) => (

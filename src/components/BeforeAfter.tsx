@@ -24,83 +24,83 @@ const EXAMPLES: ShowcaseExample[] = [
   {
     id: 'ex1',
     title: 'EVGA RTX 3090 FTW3 Ultra',
-    subtitle: 'Blown VRM Power Stages & Direct Short Circuit',
-    cardName: 'RTX 3090 Power Stage Repair',
+    subtitle: 'Fase Daya VRM Terbakar & Korsleting Langsung',
+    cardName: 'Reparasi Fase Daya RTX 3090',
     beforeImg:
       'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80&w=800', // Close up components
     afterImg:
       'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800', // Solder joints close up
     beforeSpecs: [
-      'Dead Short-to-Ground on 12V PCIe Rail',
-      'Charred PCB layer near Phase 4',
-      'System fails to boot / triggers PSU OCP',
-      'Blown 50A DrMOS and input inductor'
+      'Korsleting Penuh (Short-to-Ground) pada Jalur PCIe 12V',
+      'Lapisan PCB Hangus Terbakar di dekat Phase 4',
+      'Sistem Gagal Boot / Memicu Proteksi OCP pada PSU',
+      'DrMOS 50A dan Induktor Input Meledak'
     ],
     afterSpecs: [
-      'Layer milling & copper trace bridging',
-      'All high-side MOSFETs upgraded to 70A',
-      'Ultrasonic PCB deep bath cleaning',
-      '24hr stability tests: Peak core at 64°C'
+      'Milling Lapisan PCB & Menghubungkan Jalur Tembaga',
+      'Semua MOSFET Sisi Atas Ditingkatkan ke 70A',
+      'Pembersihan PCB Mendalam dengan Bak Ultrasonik',
+      'Uji Stabilitas 24 Jam: Suhu Inti Puncak di 64°C'
     ],
     diagnosis:
-      'Thermal overloading caused DrMOS Phase 4 to experience complete gate failure, creating a dead-short on the 12V input, triggering Power Supply protection.',
+      'Kelebihan beban termal (overheating) menyebabkan DrMOS Phase 4 mengalami kerusakan gerbang total, menciptakan korsleting langsung pada input 12V, yang memicu proteksi Catu Daya (PSU).',
     repairMethod:
-      'Milled out charred layers to prevent carbon shorting. Ran insulated copper jumper wires to bridge the power plane. Solder-reworked and upgraded the entire power phase array with premium high-current MOSFETs.',
+      'Mengikis lapisan yang hangus untuk mencegah korsleting karbon. Memasang kabel jumper tembaga terisolasi untuk menghubungkan bidang daya. Menyolder ulang dan meningkatkan seluruh jajaran fase daya dengan MOSFET arus tinggi premium.',
     tempDelta: '92°C Hotspot → 68°C'
   },
   {
     id: 'ex2',
     title: 'ASUS ROG Strix RTX 3080 Ti',
-    subtitle: 'Cracked GDDR6X Solder Joints & Memory Artifacts',
-    cardName: 'RTX 3080 Ti Artifacting Swap',
+    subtitle: 'Retak Sambungan Solder GDDR6X & Artefak Memori',
+    cardName: 'Ganti VRAM RTX 3080 Ti Berartefak',
     beforeImg:
       'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=800', // Disassembled workstation
     afterImg:
       'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=800', // Pristine component close up
     beforeSpecs: [
-      'Screen artifacting (pink lines/squares)',
-      'MODS memory diagnostic failures on Channel C0',
-      'Crashes immediately on 3D application start',
-      'Severely oxidized lead-free solder balls'
+      'Layar Berartefak (Garis/Kotak Merah Muda)',
+      'Kegagalan Diagnosis Memori MODS pada Saluran C0',
+      'Langsung Crash Saat Aplikasi 3D Dimulai',
+      'Bola Solder Bebas Timbal Teroksidasi Parah'
     ],
     afterSpecs: [
-      'Defective Micron VRAM chip desoldered',
-      'Pads prepped & re-leaded with premium alloy',
-      'Brand new 2GB GDDR6X chip reballed & mounted',
-      'Flatline 120fps on TimeSpy stress test'
+      'Chip VRAM Micron yang Rusak Dilepas',
+      'Pad Dipersiapkan & Dilapisi Solder Paduan Premium',
+      'Chip GDDR6X 2GB Baru Di-reball & Dipasang',
+      'Uji Stres TimeSpy Stabil di 120 FPS'
     ],
     diagnosis:
-      'Intense heat cycles and GPU sag caused physical thermal fatigue, cracking the BGA micro solder contacts underneath the Channel C0 memory module, leading to memory address register faults.',
+      'Siklus panas intens dan GPU yang melengkung (sagging) menyebabkan kelelahan termal fisik, meretakkan kontak solder mikro BGA di bawah modul memori Saluran C0, menyebabkan error register alamat memori.',
     repairMethod:
-      'Sourced a factory-fresh replacement Micron GDDR6X memory module. Solder-prepped the circuit board under nitrogen atmosphere. Mounted the module using a customized heat profile curve on our high-end BGA Rework Station.',
-    tempDelta: '104°C Memory Temp → 78°C'
+      'Mendapatkan modul memori Micron GDDR6X baru langsung dari pabrik. Mempersiapkan papan sirkuit untuk penyolderan di bawah atmosfer nitrogen. Memasang modul menggunakan kurva profil panas kustom di BGA Rework Station kami.',
+    tempDelta: '104°C Suhu Memori → 78°C'
   },
   {
     id: 'ex3',
     title: 'Gigabyte Eagle RX 6800 XT',
-    subtitle: 'Corroded Fan Fanout Traces & Core Repaste',
-    cardName: 'RX 6800 XT Water Damage Recovery',
+    subtitle: 'Jalur Kipas Korosi & Ganti Pasta Inti',
+    cardName: 'Pemulihan RX 6800 XT Terkena Cairan',
     beforeImg:
       'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800', // Raw silicon substrate
     afterImg:
       'https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80&w=800', // Premium motherboard clean look
     beforeSpecs: [
-      'No fans spinning / immediate thermal cutoff',
-      'Severe greenish oxidation from coolant leak',
-      'PWM circuit open loop detected',
-      'Dry, hardened original thermal clay'
+      'Kipas Tidak Berputar / Mati Otomatis karena Panas',
+      'Oksidasi Hijau Parah dari Kebocoran Cairan Pendingin',
+      'Terdeteksi Jalur Terbuka (Open Loop) pada Sirkuit PWM',
+      'Thermal Paste Asli Kering dan Mengeras'
     ],
     afterSpecs: [
-      'Chemical de-corrosion and bath treatment',
-      'Microscope jumpers on 3 PWM controller traces',
-      'Kryonaut premium thermal compound paste',
-      '100% restored fan-curve & sensor readings'
+      'Pembersihan Korosi Kimia & Perawatan Bak',
+      'Jumper Jaringan pada 3 Jalur Pengontrol PWM di Bawah Mikroskop',
+      'Menggunakan Pasta Termal Grizzly Kryonaut Premium',
+      'Kurva Kipas & Pembacaan Sensor Pulih 100%'
     ],
     diagnosis:
-      'A minor leak in a liquid cooling loop dropped ethylene-glycol directly onto the GPU fan speed controller circuit, triggering aggressive electrochemical corrosion that completely ate through three micro-traces.',
+      'Kebocoran kecil pada loop pendingin cairan meneteskan etilen-glikol langsung ke sirkuit pengontrol kecepatan kipas GPU, memicu korosi elektrokimia agresif yang memakan habis tiga jalur mikro.',
     repairMethod:
-      'Placed card in specialized ultrasonic cleaner to wash away liquid salts. Under a microscope, scraped back soldermask and rebuilt the broken traces using 0.02mm enameled copper wire. Sealed work with UV curable mask resin.',
-    tempDelta: 'Throttle Shut-off → 59°C'
+      'Menempatkan kartu grafis dalam pembersih ultrasonik khusus untuk menghilangkan garam cairan. Di bawah mikroskop, mengikis masker solder yang rusak dan membangun kembali jalur yang terputus menggunakan kabel tembaga enamel 0,02 mm. Melindungi hasil kerja dengan resin UV.',
+    tempDelta: 'Mati karena Panas → 59°C'
   }
 ];
 
@@ -126,17 +126,15 @@ export default function BeforeAfter() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-            TECHNICAL CASE FILES
+            BERKAS KASUS TEKNIS
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            Interactive Before & After <br />
-            <span className="text-brand-blue">Precision Benchmarks</span>
+            Sebelum & Sesudah Interaktif <br />
+            <span className="text-brand-blue">Tolok Ukur Presisi</span>
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            Compare the structural quality of our rework. Move the slider back
-            and forth to inspect charred components versus our finished,
-            reballed circuit work.
+            Bandingkan kualitas struktural hasil kerja kami. Geser slider ke kiri dan kanan untuk memeriksa komponen yang hangus dibandingkan dengan hasil sirkuit yang telah selesai diperbaiki dan di-reball.
           </p>
         </div>
 
@@ -174,7 +172,7 @@ export default function BeforeAfter() {
               />
               {/* After label */}
               <div className="absolute bottom-4 right-4 z-30 bg-emerald-500/80 backdrop-blur-md border border-emerald-400/30 px-3 py-1 rounded-md text-[10px] font-mono font-bold text-white shadow-lg">
-                AFTER: RESTORED LAB WORK
+                SESUDAH: REPARASI SELESAI
               </div>
 
               {/* Before Image (Overlaid, clipped based on slider position) */}
@@ -197,7 +195,7 @@ export default function BeforeAfter() {
                 </div>
                 {/* Before label */}
                 <div className="absolute bottom-4 left-4 z-30 bg-red-600/80 backdrop-blur-md border border-red-500/30 px-3 py-1 rounded-md text-[10px] font-mono font-bold text-white shadow-lg">
-                  BEFORE: BURNT DAMAGE
+                  SEBELUM: KERUSAKAN TERBAKAR
                 </div>
               </div>
 
@@ -230,7 +228,7 @@ export default function BeforeAfter() {
               {sliderPosition === 50 && (
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/30 z-25 transition-opacity duration-500">
                   <div className="px-4 py-2 rounded-lg bg-dark-bg/80 border border-white/10 backdrop-blur-md text-xs font-mono text-gray-300 animate-pulse">
-                    ↔ DRAG SLIDER TO REVEAL
+                    ↔ GESER SLIDER UNTUK MELIHAT
                   </div>
                 </div>
               )}
@@ -238,7 +236,7 @@ export default function BeforeAfter() {
 
             {/* Micro Delta Temperature Spec */}
             <div className="mt-4 flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/5 font-mono text-xs">
-              <span className="text-gray-400">BENCHMARK RECOVERY:</span>
+              <span className="text-gray-400">PEMULIHAN TOLOK UKUR:</span>
               <span className="text-brand-blue font-bold">
                 {current.tempDelta}
               </span>
@@ -248,7 +246,7 @@ export default function BeforeAfter() {
           {/* Details / Technical specs (Right - 5 cols) */}
           <div className="lg:col-span-5 flex flex-col justify-center text-left">
             <span className="font-mono text-xs text-brand-blue uppercase tracking-widest mb-1 font-bold">
-              CASE FILE SUMMARY
+              RINGKASAN BERKAS KASUS
             </span>
             <h3 className="font-display font-bold text-2xl sm:text-3xl text-white mb-2">
               {current.title}
@@ -263,7 +261,7 @@ export default function BeforeAfter() {
                 <div className="flex items-center gap-2 mb-2">
                   <AlertCircle className="w-4 h-4 text-red-400" />
                   <span className="font-mono text-[10px] font-bold text-red-400 uppercase tracking-wider">
-                    LAB DIAGNOSIS & ISSUE
+                    DIAGNOSIS LAB & MASALAH
                   </span>
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed font-sans">
@@ -276,7 +274,7 @@ export default function BeforeAfter() {
                 <div className="flex items-center gap-2 mb-2">
                   <CheckCircle className="w-4 h-4 text-emerald-400" />
                   <span className="font-mono text-[10px] font-bold text-emerald-400 uppercase tracking-wider">
-                    REPAIR METHODOLOGY & STEPS
+                    METODOLOGI & TAHAPAN REPARASI
                   </span>
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed font-sans">
@@ -289,7 +287,7 @@ export default function BeforeAfter() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <span className="font-mono text-[10px] font-bold text-red-400 block mb-2 uppercase">
-                  INITIAL DAMAGES
+                  KERUSAKAN AWAL
                 </span>
                 <ul className="flex flex-col gap-1.5">
                   {current.beforeSpecs.map((spec, i) => (
@@ -305,7 +303,7 @@ export default function BeforeAfter() {
               </div>
               <div>
                 <span className="font-mono text-[10px] font-bold text-emerald-400 block mb-2 uppercase">
-                  FINAL RESULTS
+                  HASIL AKHIR
                 </span>
                 <ul className="flex flex-col gap-1.5">
                   {current.afterSpecs.map((spec, i) => (

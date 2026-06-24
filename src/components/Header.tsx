@@ -22,13 +22,13 @@ export default function Header({ onOpenTracker }: HeaderProps) {
   }, []);
 
   const navLinks = [
-    { label: 'Services', href: '#services' },
-    { label: 'Showcase', href: '#before-after' },
-    { label: 'Products', href: '#products' },
-    { label: 'Why Choose Us', href: '#why-us' },
-    { label: 'Process', href: '#process' },
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Layanan', href: '#services' },
+    { label: 'Portofolio', href: '#before-after' },
+    { label: 'Produk', href: '#products' },
+    { label: 'Keunggulan', href: '#why-us' },
+    { label: 'Alur Kerja', href: '#process' },
+    { label: 'Galeri', href: '#gallery' },
+    { label: 'Kontak', href: '#contact' }
   ];
 
   const handleLinkClick = (
@@ -74,12 +74,12 @@ export default function Header({ onOpenTracker }: HeaderProps) {
           <div className="relative p-2 bg-brand-blue/10 border border-brand-blue/20 rounded-xl group-hover:scale-105 transition-transform duration-300">
             <Cpu className="w-5 h-5 text-brand-blue" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-left">
             <span className="font-display font-bold tracking-wider text-lg text-white">
-              AERO<span className="text-brand-blue">GPU</span>
+              AKAHITO<span className="text-brand-blue"> STORE</span>
             </span>
             <span className="font-mono text-[9px] text-gray-500 tracking-widest uppercase">
-              LABS & CO.
+              SEMARANG
             </span>
           </div>
         </a>
@@ -103,9 +103,9 @@ export default function Header({ onOpenTracker }: HeaderProps) {
         <div className="hidden sm:flex items-center gap-4">
           <button
             onClick={onOpenTracker}
-            className="px-4 py-2 font-mono text-xs font-semibold border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95"
+            className="px-4 py-2 font-mono text-xs font-semibold border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 cursor-pointer"
           >
-            CONSOLE LOGS
+            LACAK REPARASI
           </button>
           <a
             href="#contact"
@@ -113,7 +113,7 @@ export default function Header({ onOpenTracker }: HeaderProps) {
             className="px-5 py-2 font-display text-xs font-bold bg-brand-blue hover:bg-brand-blue/90 text-neutral-950 rounded-lg transition-all duration-300 active:scale-95 flex items-center gap-2"
           >
             <PhoneCall className="w-3.5 h-3.5" />
-            BOOK WORKBENCH
+            PESAN SLOT
           </a>
         </div>
 
@@ -121,9 +121,9 @@ export default function Header({ onOpenTracker }: HeaderProps) {
         <div className="lg:hidden flex items-center gap-3">
           <button
             onClick={onOpenTracker}
-            className="px-3 py-1.5 font-mono text-[10px] font-semibold border border-brand-blue/40 text-brand-blue hover:bg-brand-blue/10 rounded-lg"
+            className="px-3 py-1.5 font-mono text-[10px] font-semibold border border-brand-blue/40 text-brand-blue hover:bg-brand-blue/10 rounded-lg cursor-pointer"
           >
-            TRACK
+            LACAK
           </button>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -161,16 +161,16 @@ export default function Header({ onOpenTracker }: HeaderProps) {
                 setIsMobileMenuOpen(false);
                 onOpenTracker();
               }}
-              className="w-full py-3 font-mono text-xs font-semibold border border-white/10 text-gray-300 hover:bg-white/5 rounded-lg transition-colors text-center"
+              className="w-full py-3 font-mono text-xs font-semibold border border-white/10 text-gray-300 hover:bg-white/5 rounded-lg transition-colors text-center cursor-pointer"
             >
-              CONSOLE LOGS
+              LACAK REPARASI
             </button>
             <a
               href="#contact"
               onClick={(e) => handleLinkClick(e, '#contact')}
               className="w-full py-3 font-display text-sm font-bold bg-brand-blue text-neutral-950 text-center rounded-lg shadow-lg"
             >
-              BOOK WORKBENCH
+              PESAN SLOT
             </a>
           </div>
         </div>

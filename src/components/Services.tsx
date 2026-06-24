@@ -31,17 +31,15 @@ export default function Services({ onBookService }: ServicesProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-            WHAT WE DO
+            LAYANAN KAMI
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            Elite Repair Services & <br />
-            <span className="text-brand-blue">Component Engineering</span>
+            Layanan Reparasi Elite & <br />
+            <span className="text-brand-blue">Rekayasa Komponen</span>
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            We don't do quick "temporary" fixes. We deploy microscopic imaging,
-            diagnostic heat chambers, and BGA engineering to restore hardware to
-            factory-new standards.
+            Kami tidak melakukan perbaikan "sementara". Kami menggunakan pencitraan mikroskopis, ruang panas diagnostik, dan rekayasa BGA untuk mengembalikan perangkat keras Anda ke standar seperti baru dari pabrik.
           </p>
         </div>
 
@@ -74,7 +72,7 @@ export default function Services({ onBookService }: ServicesProps) {
                 {/* Micro details row */}
                 <div className="flex justify-between items-center mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="font-mono text-[10px] font-bold text-brand-blue tracking-widest uppercase bg-brand-blue/10 border border-brand-blue/20 px-2 py-0.5 rounded">
-                    FROM {service.basePrice}
+                    MULAI DARI {service.basePrice}
                   </span>
                   <span className="font-mono text-[10px] text-gray-400 flex items-center gap-1">
                     <Clock className="w-3 h-3 text-brand-blue" />{' '}
@@ -142,7 +140,7 @@ export default function Services({ onBookService }: ServicesProps) {
 
                 <div className="absolute bottom-6 left-6 right-6">
                   <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase bg-brand-blue/10 border border-brand-blue/25 px-3 py-1 rounded-full backdrop-blur-md mb-3 inline-block">
-                    PREMIUM HARDWARE LAB
+                    LAB PERANGKAT KERAS PREMIUM
                   </span>
                   <h3 className="font-display font-bold text-2xl sm:text-3xl text-white">
                     {selectedService.title}
@@ -156,7 +154,7 @@ export default function Services({ onBookService }: ServicesProps) {
                 <div className="md:col-span-7 flex flex-col gap-6">
                   <div>
                     <h4 className="font-mono text-[10px] font-bold text-gray-400 tracking-wider uppercase mb-2">
-                      SERVICE SUMMARY
+                      RINGKASAN LAYANAN
                     </h4>
                     <p className="text-gray-300 font-sans text-sm sm:text-base leading-relaxed">
                       {selectedService.longDescription}
@@ -165,7 +163,7 @@ export default function Services({ onBookService }: ServicesProps) {
 
                   <div>
                     <h4 className="font-mono text-[10px] font-bold text-gray-400 tracking-wider uppercase mb-3">
-                      CERTIFIED WORKFLOW HIGHLIGHTS
+                      FITUR UNGGULAN ALUR KERJA
                     </h4>
                     <ul className="flex flex-col gap-2.5">
                       {selectedService.highlights.map((item, i) => (
@@ -185,7 +183,7 @@ export default function Services({ onBookService }: ServicesProps) {
                 <div className="md:col-span-5 flex flex-col justify-between gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 h-full">
                   <div className="flex flex-col gap-4">
                     <h4 className="font-mono text-xs font-bold text-gray-300 tracking-wider border-b border-white/10 pb-2">
-                      ESTIMATE DETAILS
+                      DETAIL ESTIMASI
                     </h4>
 
                     <div className="flex items-center gap-3">
@@ -194,10 +192,10 @@ export default function Services({ onBookService }: ServicesProps) {
                       </div>
                       <div className="flex flex-col">
                         <span className="text-[10px] text-gray-400 font-mono">
-                          BASE PRICE
+                          HARGA DASAR
                         </span>
                         <span className="font-display font-bold text-lg text-white">
-                          From {selectedService.basePrice}
+                          Mulai dari {selectedService.basePrice}
                         </span>
                       </div>
                     </div>
@@ -208,7 +206,7 @@ export default function Services({ onBookService }: ServicesProps) {
                       </div>
                       <div className="flex flex-col">
                         <span className="text-[10px] text-gray-400 font-mono">
-                          TURNAROUND
+                          LAMA PENGERJAAN
                         </span>
                         <span className="font-display font-bold text-sm text-white">
                           {selectedService.turnaround}
@@ -222,10 +220,10 @@ export default function Services({ onBookService }: ServicesProps) {
                       </div>
                       <div className="flex flex-col">
                         <span className="text-[10px] text-gray-400 font-mono">
-                          WARRANTY
+                          GARANSI
                         </span>
                         <span className="font-display font-bold text-sm text-white">
-                          1-Year Guarantee Included
+                          Termasuk Garansi 1 Tahun
                         </span>
                       </div>
                     </div>
@@ -239,7 +237,7 @@ export default function Services({ onBookService }: ServicesProps) {
                     className="w-full py-3 bg-brand-blue hover:bg-brand-blue/90 text-neutral-950 font-display font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2 cursor-pointer mt-4"
                   >
                     <Phone className="w-3.5 h-3.5" />
-                    Book This Service
+                    Pesan Layanan Ini
                   </button>
                 </div>
               </div>

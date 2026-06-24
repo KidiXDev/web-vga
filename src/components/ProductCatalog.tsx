@@ -26,13 +26,13 @@ export default function ProductCatalog({
   const [showSuccessToast, setShowSuccessToast] = useState<string | null>(null);
 
   const categories = [
-    { value: 'all', label: 'All Components' },
-    { value: 'gpu', label: 'GPUs' },
-    { value: 'cpu', label: 'CPUs' },
-    { value: 'motherboard', label: 'Motherboards' },
+    { value: 'all', label: 'Semua Komponen' },
+    { value: 'gpu', label: 'GPU' },
+    { value: 'cpu', label: 'CPU' },
+    { value: 'motherboard', label: 'Motherboard' },
     { value: 'ram', label: 'RAM' },
-    { value: 'psu', label: 'Power Supplies' },
-    { value: 'case', label: 'Cases' }
+    { value: 'psu', label: 'Power Supply' },
+    { value: 'case', label: 'Casing' }
   ];
 
   const filteredProducts =
@@ -50,12 +50,12 @@ export default function ProductCatalog({
 
   const addToQuoteCart = (product: Product) => {
     if (quoteCart.some((item) => item.id === product.id)) {
-      setShowSuccessToast(`"${product.name}" is already in your estimate.`);
+      setShowSuccessToast(`"${product.name}" sudah ada di estimasi.`);
       setTimeout(() => setShowSuccessToast(null), 2000);
       return;
     }
     setQuoteCart([...quoteCart, product]);
-    setShowSuccessToast(`Added ${product.name} to custom quote!`);
+    setShowSuccessToast(`Berhasil menambahkan ${product.name} ke estimasi!`);
     setTimeout(() => setShowSuccessToast(null), 2500);
   };
 
@@ -86,19 +86,17 @@ export default function ProductCatalog({
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase block mb-3">
-            HARDWARE STORE
+            TOKO HARDWARE
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            Elite Gaming Components <br />
+            Komponen Gaming Elite <br />
             <span className="text-brand-blue font-extrabold">
-              In Stock & Ready for Assembly
+              Tersedia & Siap Dirakit
             </span>
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            We source rare and premium flagship parts. Purchase individually or
-            have our BGA-certified tech team assemble, thermal-optimize, and
-            stress-test your system for you.
+            Kami menyediakan suku cadang unggulan yang langka dan premium. Beli secara eceran atau percayakan tim teknisi bersertifikat BGA kami untuk merakit, mengoptimalkan suhu, dan menguji stabilitas sistem Anda.
           </p>
         </div>
 
@@ -156,14 +154,14 @@ export default function ProductCatalog({
 
                   {product.isPopular && (
                     <div className="absolute top-3 left-3 bg-white/10 px-2.5 py-0.5 rounded font-mono text-[9px] font-bold text-white uppercase tracking-widest border border-white/10">
-                      Enthusiast Choice
+                      Pilihan Antusias
                     </div>
                   )}
 
                   {!product.inStock && (
                     <div className="absolute inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center">
                       <span className="font-mono text-xs font-bold text-red-400 border border-red-500/30 px-3 py-1 rounded bg-red-500/10 tracking-widest uppercase">
-                        Out of Stock
+                        Stok Habis
                       </span>
                     </div>
                   )}
@@ -209,11 +207,11 @@ export default function ProductCatalog({
                     <div className="flex flex-col">
                       {product.originalPrice && (
                         <span className="text-xs text-gray-500 line-through">
-                          ${product.originalPrice}
+                          Rp {product.originalPrice.toLocaleString('id-ID')}
                         </span>
                       )}
                       <span className="font-display font-extrabold text-lg text-white">
-                        ${product.price}
+                        Rp {product.price.toLocaleString('id-ID')}
                       </span>
                     </div>
 
@@ -223,7 +221,7 @@ export default function ProductCatalog({
                         className="px-3.5 py-2 rounded-lg bg-white/5 hover:bg-brand-blue hover:text-dark-bg border border-white/10 hover:border-transparent font-mono text-xs font-bold text-gray-300 transition-all duration-300 flex items-center gap-1.5 cursor-pointer"
                       >
                         <Plus className="w-3.5 h-3.5" />
-                        ADD TO BUILD
+                        TAMBAH KE RAKITAN
                       </button>
                     )}
                   </div>
@@ -248,18 +246,16 @@ export default function ProductCatalog({
                     <div className="flex items-center gap-2">
                       <ShoppingBag className="w-5 h-5 text-brand-blue" />
                       <h3 className="font-display font-bold text-lg text-white">
-                        Custom Build Estimate
+                        Estimasi Rakit PC
                       </h3>
                     </div>
                     <span className="font-mono text-xs bg-brand-blue/20 text-brand-blue px-2.5 py-0.5 rounded-full font-bold">
-                      {quoteCart.length} PARTS
+                      {quoteCart.length} KOMPONEN
                     </span>
                   </div>
 
                   <p className="text-xs text-gray-400 mb-4 font-sans leading-relaxed">
-                    Selected items for your dream computer. Add or remove
-                    components. Submit to request free hardware assembly or
-                    specific repair diagnostics.
+                    Komponen terpilih untuk PC impian Anda. Tambahkan atau hapus komponen. Ajukan untuk meminta perakitan profesional gratis atau diagnosis perbaikan tertentu.
                   </p>
 
                   {/* Selected Items Scrollable List */}
@@ -288,7 +284,7 @@ export default function ProductCatalog({
 
                         <div className="flex items-center gap-2">
                           <span className="font-mono text-xs font-bold text-gray-300">
-                            ${item.price}
+                            Rp {item.price.toLocaleString('id-ID')}
                           </span>
                           <button
                             onClick={() => removeFromQuoteCart(item.id)}
@@ -307,15 +303,15 @@ export default function ProductCatalog({
                   {/* Assembly charge promo */}
                   <div className="flex items-center gap-2 px-3 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-lg mb-4 text-[11px] text-emerald-400 font-sans leading-relaxed">
                     <ShieldCheck className="w-4 h-4 shrink-0" />
-                    <span>Promo: Free pro assembly with 3+ components!</span>
+                    <span>Promo: Gratis perakitan profesional minimal 3 komponen!</span>
                   </div>
 
                   <div className="flex justify-between items-center mb-6">
                     <span className="font-mono text-xs text-gray-400">
-                      ESTIMATED TOTAL:
+                      TOTAL ESTIMASI:
                     </span>
                     <span className="font-display font-extrabold text-2xl text-brand-blue">
-                      ${cartTotal}
+                      Rp {cartTotal.toLocaleString('id-ID')}
                     </span>
                   </div>
 
@@ -323,7 +319,7 @@ export default function ProductCatalog({
                     onClick={handleRequestAssemblyQuote}
                     className="w-full py-3.5 bg-brand-blue hover:bg-brand-blue/90 text-neutral-950 font-display font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2 cursor-pointer shadow-lg"
                   >
-                    Request Custom Assembly Quote
+                    Ajukan Estimasi Rakit PC
                     <ArrowRight className="w-4 h-4" />
                   </button>
 
@@ -331,7 +327,7 @@ export default function ProductCatalog({
                     onClick={() => setQuoteCart([])}
                     className="w-full py-2.5 mt-2 bg-transparent text-gray-400 hover:text-white font-mono text-2xs uppercase tracking-wider transition-colors text-center cursor-pointer"
                   >
-                    Clear All Components
+                    Hapus Semua Komponen
                   </button>
                 </div>
               </motion.div>
