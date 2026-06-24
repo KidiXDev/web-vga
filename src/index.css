@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-blue: #f59e0b; /* Warm Amber Accent */
+  --color-brand-purple: #94a3b8; /* Muted Solder Slate */
+  --color-dark-bg: #090a0c; /* Matte Carbon Black */
+  --color-dark-card: #121316; /* Dark Metallic Card */
+  --color-dark-border: #1e2025; /* Industrial Steel Border */
+
+  --shadow-neon-blue: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-neon-purple: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Base styling and custom scrollbar */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-dark-bg);
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f222e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-blue);
+  box-shadow: var(--shadow-neon-blue);
+}
+
+/* Custom Glassmorphism styles */
+.glass-panel {
+  background: rgba(20, 22, 29, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(0, 240, 255, 0.2);
+  box-shadow: var(--shadow-neon-blue);
+  transition: all 0.3s ease;
+}
+
+.glass-panel-purple-hover:hover {
+  border-color: rgba(157, 78, 221, 0.2);
+  box-shadow: var(--shadow-neon-purple);
+  transition: all 0.3s ease;
+}
+
+/* Glow effects */
+.glow-text-blue {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+/* Animations */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
