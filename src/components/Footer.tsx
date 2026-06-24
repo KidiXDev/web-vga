@@ -162,8 +162,7 @@ export default function Footer() {
         {/* Lower copyright bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs text-gray-500 font-mono">
-            © 2026 Akahito Store Semarang. Hak Cipta Dilindungi Undang-Undang.
-            Dikembangkan di bawah standar kepatuhan solder BGA.
+            © 2026 Akahito Store Semarang. All Right Reserved.
           </span>
 
           <div className="flex items-center gap-6 text-xs text-gray-500 font-sans">
