@@ -268,7 +268,7 @@ export default function LiveTracker({
                     <div className="p-6 rounded-2xl bg-black/60 border border-white/5 font-mono">
                       <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
                         <span className="text-[10px] font-bold text-brand-blue uppercase tracking-widest">
-                          LOG MEJA KERJA LAB // MEJA TERLINDUNGI ESD
+                          LOG MEJA KERJA TEKNISI // MEJA TERLINDUNGI ESD
                         </span>
                         <div className="flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 bg-brand-blue rounded-full animate-ping" />

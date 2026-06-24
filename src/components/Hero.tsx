@@ -46,7 +46,7 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
           >
             <Sparkles className="w-3.5 h-3.5 text-brand-blue" />
             <span className="font-mono text-[10px] font-semibold tracking-wider text-gray-400">
-              LABORATORIUM PERBAIKAN & RAKIT PC PREMIUM
+              BENGKEL REPARASI & RAKIT PC PREMIUM
             </span>
           </motion.div>
 
@@ -181,7 +181,7 @@ export default function Hero({ onBookClick, onBrowseClick }: HeroProps) {
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 flex justify-between items-center">
                 <div className="flex flex-col">
                   <span className="font-mono text-[9px] text-brand-blue font-bold tracking-widest uppercase">
-                    MEJA KERJA LAB 01
+                    MEJA REPARASI 01
                   </span>
                   <span className="font-display font-bold text-sm text-white">
                     REBUILD NVIDIA RTX 4090

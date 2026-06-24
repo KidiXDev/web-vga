@@ -1,4 +1,10 @@
-import type { GalleryItem, Product, RepairTicket, Service, Testimonial } from './types';
+import type {
+  GalleryItem,
+  Product,
+  RepairTicket,
+  Service,
+  Testimonial
+} from './types';
 
 export const SERVICES: Service[] = [
   {
@@ -99,7 +105,7 @@ export const SERVICES: Service[] = [
     longDescription:
       'Lindungi investasi GPU Anda. Layanan restorasi penuh kami meliputi pembersihan heatsink dengan bak ultrasonik mendalam, pembersihan debu dari kipas, pembersihan papan PCB menggunakan alkohol isopropil, serta penggantian pasta termal dan pad baru.',
     image:
-      'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=800',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6do1poCjHxDj1dGYMn_39JJBGCDlzeZF6JCaUP0nnR9k94P_i7KIcmYc&s=10',
     basePrice: 'Rp 950.000',
     turnaround: 'Selesai di Hari yang Sama',
     highlights: [
@@ -119,7 +125,7 @@ export const PRODUCTS: Product[] = [
     price: 31000000,
     originalPrice: 34000000,
     image:
-      'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=600',
+      'https://mbpc.gg/cdn/shop/files/20240609_215927.jpg?v=1721255222&width=1946',
     rating: 4.9,
     specs: [
       '24GB GDDR6X VRAM',
@@ -136,7 +142,7 @@ export const PRODUCTS: Product[] = [
     category: 'cpu',
     price: 6000000,
     image:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600',
+      'https://cdn.mos.cms.futurecdn.net/v2/t:0,l:300,cw:1920,ch:1080,q:80,w:1920/V8jM5TCahc4LNw8cUBiZeY.jpg',
     rating: 4.8,
     specs: [
       '8 Core / 16 Thread',
@@ -186,7 +192,7 @@ export const PRODUCTS: Product[] = [
     category: 'psu',
     price: 8200000,
     image:
-      'https://images.unsplash.com/photo-1551645121-d1034da75057?auto=format&fit=crop&q=80&w=600',
+      'https://www.quietpc.com/images/products/ssr-prime-tx-1600-ne-3-large.jpg',
     rating: 4.9,
     specs: [
       '1600W 80+ Titanium',
@@ -202,8 +208,7 @@ export const PRODUCTS: Product[] = [
     category: 'case',
     price: 4000000,
     originalPrice: 4400000,
-    image:
-      'https://images.unsplash.com/photo-1587202372430-612196025195?auto=format&fit=crop&q=80&w=600',
+    image: 'https://i.redd.it/3b6ul5o2yxub1.jpg',
     rating: 4.8,
     specs: [
       'Full-Tower Dual Chamber',
@@ -278,7 +283,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image:
       'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=800',
     description:
-      'Menyolder pengontrol daya frekuensi tinggi di bawah mikroskop definisi tinggi di lab kami.'
+      'Menyolder pengontrol daya frekuensi tinggi di bawah mikroskop definisi tinggi di bengkel kami.'
   },
   {
     id: 'g4',

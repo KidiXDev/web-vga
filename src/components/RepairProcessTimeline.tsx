@@ -45,7 +45,7 @@ const STEPS: ProcessStep[] = [
     title: 'Penyolderan & Reparasi Core',
     icon: <Hammer className="w-5 h-5 text-brand-blue" />,
     image:
-      'https://images.unsplash.com/photo-1597872200319-3367cd24174b?auto=format&fit=crop&q=80&w=400',
+      'https://s.alicdn.com/@sc04/kf/H6a1e10ff9dd04d2ab0a56703e77c4938E/alibaba-online-shopping-motherboard-chipset-remove-machine-for-vga-ecu-ic-soldering-desoldering.jpg',
     desc: 'Pengerjaan ulang BGA di bawah mikroskop. Kami melepas dan mengganti fase daya yang terbakar, chip VRAM yang retak, atau melakukan re-balling chip core silikon utama menggunakan timah paduan premium.',
     checks: [
       'Penyolderan ulang sambungan mikroskopis',
@@ -58,8 +58,7 @@ const STEPS: ProcessStep[] = [
     number: '04',
     title: 'Pengujian Stres Ekstrem',
     icon: <Flame className="w-5 h-5 text-brand-blue" />,
-    image:
-      'https://images.unsplash.com/photo-1587202372430-612196025195?auto=format&fit=crop&q=80&w=400',
+    image: 'https://www.ozone3d.net/public/jegx/201106/furmark_185.jpg',
     desc: 'Kami membersihkan heatsink, mengaplikasikan pasta/pad termal Grizzly premium, dan menjalankan uji tolok ukur FurMark dan TimeSpy secara berulang selama 12 jam nonstop.',
     checks: [
       'Uji beban penuh nonstop 12 jam',
@@ -107,9 +106,9 @@ export default function RepairProcessTimeline() {
           </h2>
           <div className="w-16 h-1 bg-brand-blue mx-auto mb-6 rounded-full" />
           <p className="text-gray-400 font-sans text-base sm:text-lg">
-            Kami mendokumentasikan segalanya. Sejak perangkat Anda tiba di lab
-            kami, perangkat tersebut menjalani alur rekayasa standar kami untuk
-            menjamin keberhasilan.
+            Kami mendokumentasikan segalanya. Sejak perangkat Anda tiba di
+            workshop kami, perangkat tersebut menjalani alur rekayasa standar
+            kami untuk menjamin keberhasilan.
           </p>
         </div>
 

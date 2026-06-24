@@ -261,7 +261,7 @@ export default function BeforeAfter() {
                 <div className="flex items-center gap-2 mb-2">
                   <AlertCircle className="w-4 h-4 text-red-400" />
                   <span className="font-mono text-[10px] font-bold text-red-400 uppercase tracking-wider">
-                    DIAGNOSIS LAB & MASALAH
+                    DIAGNOSIS TEKNIS & MASALAH
                   </span>
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed font-sans">

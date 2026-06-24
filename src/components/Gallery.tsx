@@ -12,7 +12,7 @@ export default function Gallery() {
     { value: 'all', label: 'Semua Foto' },
     { value: 'builds', label: 'PC Rakitan' },
     { value: 'gpus', label: 'Desain Ulang GPU' },
-    { value: 'workshop', label: 'Ruang Kerja Lab' },
+    { value: 'workshop', label: 'Ruang Kerja Bengkel' },
     { value: 'microscope', label: 'Tampilan Mikroskop' }
   ];
 
@@ -36,7 +36,7 @@ export default function Gallery() {
             PORTOFOLIO VISUAL
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight mb-6">
-            Di Dalam Lab Bersih <br />
+            Di Dalam Bengkel Bersih <br />
             <span className="text-brand-blue font-extrabold">
               Akahito Store
             </span>
@@ -164,7 +164,7 @@ export default function Gallery() {
                       <Camera className="w-4 h-4 text-brand-blue" />
                       <div className="flex flex-col">
                         <span className="text-[9px] text-gray-500 font-mono">
-                          KAMERA LAB
+                          KAMERA FOTO
                         </span>
                         <span className="text-xs text-gray-300 font-mono">
                           Micro-Nikkor 105mm f/2.8 Macro
@@ -188,7 +188,7 @@ export default function Gallery() {
 
                 <div className="border-t border-white/5 pt-4 mt-6">
                   <span className="text-[10px] text-gray-500 font-mono block">
-                    Log Lab Akahito Store • Terdaftar 2026-06-23
+                    Log Toko Akahito Store • Terdaftar 2026-06-23
                   </span>
                 </div>
               </div>

@@ -140,7 +140,7 @@ export default function Services({ onBookService }: ServicesProps) {
 
                 <div className="absolute bottom-6 left-6 right-6">
                   <span className="font-mono text-xs font-bold text-brand-blue tracking-widest uppercase bg-brand-blue/10 border border-brand-blue/25 px-3 py-1 rounded-full backdrop-blur-md mb-3 inline-block">
-                    LAB PERANGKAT KERAS PREMIUM
+                    WORKSHOP HARDWARE PREMIUM
                   </span>
                   <h3 className="font-display font-bold text-2xl sm:text-3xl text-white">
                     {selectedService.title}

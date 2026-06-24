@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 font-mono text-[9px] text-gray-400 uppercase tracking-widest">
-                Lab Utama Perakitan ESD
+                Workshop Utama Perakitan ESD
               </div>
             </div>
 
@@ -125,10 +125,10 @@ export default function WhyChooseUs() {
               ))}
             </div>
 
-            {/* Laboratory standard ticker */}
+            {/* Workshop standard ticker */}
             <div className="border-t border-white/10 pt-6">
-              <span className="font-mono text-2xs font-bold text-brand-blue tracking-wider uppercase block mb-4">
-                STANDAR LABORATORIUM YANG KETAT
+               <span className="font-mono text-2xs font-bold text-brand-blue tracking-wider uppercase block mb-4">
+                STANDAR WORKSHOP YANG KETAT
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {standards.map((std, i) => (

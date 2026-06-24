@@ -17,7 +17,7 @@ export default function ContactForm() {
               </div>
               <div className="flex flex-col max-w-2xl">
                 <span className="font-mono text-xs text-brand-blue font-bold uppercase tracking-wider">
-                  Laboratorium Pusat Akahito Store
+                  Pusat Reparasi Akahito Store
                 </span>
                 <span className="text-base sm:text-lg text-gray-200 font-sans mt-2 leading-relaxed font-medium">
                   Jl. Kudan I, Tlogomulyo, Kec. Pedurungan, Kota Semarang, Jawa

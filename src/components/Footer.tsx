@@ -1,4 +1,10 @@
-import { ArrowUp, Cpu, HomeIcon, Shield } from 'lucide-react';
+import { ArrowUp, Cpu } from 'lucide-react';
+import {
+  SiFacebook,
+  SiGooglemaps,
+  SiInstagram,
+  SiYoutube
+} from 'react-icons/si';
 
 export default function Footer() {
   const handleScrollTop = () => {
@@ -16,8 +22,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Upper Column Grids */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-16 border-b border-white/5 text-left">
-          {/* Col 1: Brand & Bio - 4/12 width */}
-          <div className="lg:col-span-4 flex flex-col items-start gap-6">
+          {/* Col 1: Brand & Bio - 5/12 width */}
+          <div className="lg:col-span-5 flex flex-col items-start gap-6">
             <a
               href="#"
               className="flex items-center gap-3 group"
@@ -40,7 +46,9 @@ export default function Footer() {
             </a>
 
             <p className="text-gray-400 text-sm font-sans leading-relaxed max-w-sm">
-              Kami mengoperasikan laboratorium penyolderan mikro dan pengerjaan ulang BGA tingkat antusias. Menyediakan suku cadang langka, meningkatkan chip memori, dan merestorasi kartu grafis yang rusak sejak 2018.
+              Kami mengoperasikan bengkel penyolderan mikro dan pengerjaan ulang
+              BGA tingkat antusias. Menyediakan suku cadang langka, meningkatkan
+              chip memori, dan merestorasi kartu grafis yang rusak sejak 2018.
             </p>
 
             {/* Socials */}
@@ -49,31 +57,31 @@ export default function Footer() {
                 href="#"
                 className="p-2.5 rounded-lg bg-white/5 hover:bg-brand-blue hover:text-neutral-950 border border-white/5 hover:border-transparent transition-all duration-300"
               >
-                <HomeIcon className="w-4 h-4" />
+                <SiFacebook className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="p-2.5 rounded-lg bg-white/5 hover:bg-brand-blue hover:text-neutral-950 border border-white/5 hover:border-transparent transition-all duration-300"
               >
-                <HomeIcon className="w-4 h-4" />
+                <SiInstagram className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="p-2.5 rounded-lg bg-white/5 hover:bg-brand-blue hover:text-neutral-950 border border-white/5 hover:border-transparent transition-all duration-300"
               >
-                <HomeIcon className="w-4 h-4" />
+                <SiYoutube className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="p-2.5 rounded-lg bg-white/5 hover:bg-brand-blue hover:text-neutral-950 border border-white/5 hover:border-transparent transition-all duration-300"
               >
-                <HomeIcon className="w-4 h-4" />
+                <SiGooglemaps className="w-4 h-4" />
               </a>
             </div>
           </div>
 
-          {/* Col 2: Services Quick links - 3/12 width */}
-          <div className="lg:col-span-3 flex flex-col items-start gap-4">
+          {/* Col 2: Services Quick links - 4/12 width */}
+          <div className="lg:col-span-4 flex flex-col items-start gap-4">
             <h4 className="font-display font-bold text-sm text-white tracking-wide">
               SOLUSI PERBAIKAN
             </h4>
@@ -111,8 +119,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 3: Navigation shortcuts - 2/12 width */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-4">
+          {/* Col 3: Navigation shortcuts - 3/12 width */}
+          <div className="lg:col-span-3 flex flex-col items-start gap-4">
             <h4 className="font-display font-bold text-sm text-white tracking-wide">
               NAVIGASI
             </h4>
@@ -145,31 +153,17 @@ export default function Footer() {
                 href="#gallery"
                 className="text-gray-400 hover:text-brand-blue transition-colors"
               >
-                Galeri Laboratorium
+                Galeri Bengkel
               </a>
             </div>
-          </div>
-
-          {/* Col 4: Warranty & Assurance card - 3/12 width */}
-          <div className="lg:col-span-3 p-5 rounded-2xl bg-white/3 border border-white/5 flex flex-col items-start gap-4 text-left">
-            <div className="p-2 bg-brand-blue/10 rounded-lg text-brand-blue">
-              <Shield className="w-5 h-5" />
-            </div>
-
-            <h4 className="font-display font-bold text-sm text-white leading-tight">
-              Garansi Resmi 365 Hari
-            </h4>
-
-            <p className="text-gray-400 text-xs font-sans leading-relaxed">
-              Setiap pembangunan kembali VRM tingkat komponen, perbaikan jalur, atau perawatan liquid metal yang kami lakukan didukung oleh garansi penuh 1 tahun.
-            </p>
           </div>
         </div>
 
         {/* Lower copyright bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs text-gray-500 font-mono">
-            © 2026 Akahito Store Semarang. Hak Cipta Dilindungi Undang-Undang. Dikembangkan di bawah standar kepatuhan solder BGA.
+            © 2026 Akahito Store Semarang. Hak Cipta Dilindungi Undang-Undang.
+            Dikembangkan di bawah standar kepatuhan solder BGA.
           </span>
 
           <div className="flex items-center gap-6 text-xs text-gray-500 font-sans">
